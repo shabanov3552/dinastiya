@@ -1,0 +1,49 @@
+.dropdown {
+   position: relative;
+   z-index: 5;
+   // .dropdown__button
+
+   &__button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:after {
+         content: "";
+         display: block;
+         width: 24px;
+         height: 24px;
+         background: url("../img/icons/arrow-dropdown.svg") center no-repeat;
+         transition: all 0.3s ease 0s;
+      }
+
+      ._dd-active & {
+         &::after {
+            transform: rotate(-180deg);
+         }
+      }
+   }
+
+   // .dropdown__block
+
+   &__block {
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      opacity: 0;
+      visibility: hidden;
+
+      ._dd-active & {
+         opacity: 1;
+         visibility: visible;
+      }
+   }
+
+   // .dropdown__links
+
+   &__links {}
+
+   // .dropdown__link
+
+   &__link {}
+}

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Решение проблем</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20240913221845" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240913221845">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper ">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top">
+					<div class="header__left">
+						<a href="" class="header__link">
+							<img src="img/icons/icon_point-grey.svg" alt="">
+							<span>Новокузнецк, ул. Пирогова, 10</span>
+						</a>
+						<a href="mailto:clinicadinasty@yandex.ru" class="header__link">
+							<img src="img/icons/icon_mail-grey.svg" alt="">
+							<span>clinicadinasty@yandex.ru</span>
+						</a>
+					</div>
+					<a href="" class="header__logo"><img src="img/logo.webp" alt=""></a>
+					<div class="header__right">
+						<div class="header__phones">
+							<img src="img/icons/icon_phone-grey.svg" alt="">
+							<a href="tel:+7 (962) 734-16-79" class="header__link">
+								<span>+7 (962) 734-16-79</span>
+							</a>
+							<a href="tel:+7 (3843) 209-679" class="header__link">
+								<span>+7 (3843) 209-679</span>
+							</a>
+						</div>
+						<div class="header__messengers">
+							<a href="" class="header__link">
+								<img src="img/icons/whatsapp.svg" alt="">
+							</a>
+							<a href="" class="header__link">
+								<img src="img/icons/telegram.svg" alt="">
+							</a>
+						</div>
+						<button type="button" class="header__button" data-popup="#callback">Запись к врачу</button>
+					</div>
+					<button type="button" class="header__burger icon-menu"><span></span></button>
+				</div>
+				<div class="header__catalog menu-catalog">
+					<nav class="menu-catalog__body">
+						<div class="menu-catalog__list">
+							<a href="" class="menu-catalog__link" data-parent="1">Лицо</a>
+							<a href="" class="menu-catalog__link" data-parent="2">Тело</a>
+							<a href="" class="menu-catalog__link" data-parent="3">Пластическая хирургия</a>
+							<a href="" class="menu-catalog__link" data-parent="4">Решение проблем</a>
+							<a href="" class="menu-catalog__link">Цены</a>
+							<a href="" class="menu-catalog__link">Акции</a>
+							<a href="" class="menu-catalog__link">Специалисты</a>
+							<a href="" class="menu-catalog__link" data-parent="5">О компании</a>
+
+							<div class="menu-catalog__link dropdown search-modal" data-dropdown>
+								<button type="button" class="dropdown__button search-modal__button" data-dropdown-button><img src="img/icons/icon_search.svg" alt=""></button>
+								<div class="dropdown__block search-modal__block">
+									<form action="" class="form">
+										<div class="form__line">
+											<label for="search_input" class="form__label">Поиск</label>
+											<input id="search_input" type="text" name="search_input" class="form__input">
+											<svg class="form__clear-svg">
+												<use xlink:href="img/icons/icons.svg#input_clear"></use>
+											</svg>
+										</div>
+										<button type="submit" class="form__button">Найти</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="submenu-catalog">
+							<div class="submenu-catalog__body submenu-face" data-submenu="1">
+								<div class="submenu-catalog__wrapper">
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Аппаратная косметология</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Смас лифтинг ультраформер </a>
+												<a href="" class="submenu-catalog__link">Vbeam Perfecta</a>
+												<a href="" class="submenu-catalog__link">Микроигольчатый Рф-лифтинг </a>
+												<a href="" class="submenu-catalog__link">Лазерное омоложение CO2</a>
+												<a href="" class="submenu-catalog__link">Фотоомоложение BBL</a>
+												<a href="" class="submenu-catalog__link">Микротоковая терапия </a>
+												<a href="" class="submenu-catalog__link">Голливудский уход Hydrafacial </a>
+												<a href="" class="submenu-catalog__link">Icoone laser лицо </a>
+											</div>
+										</div>
+									</div>
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Инъекционная косметология</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Инъекционное омоложение Aesthefill</a>
+												<a href="" class="submenu-catalog__link">Коктейль Монако </a>
+												<a href="" class="submenu-catalog__link">Клеточное омоложение Regen lab</a>
+												<a href="" class="submenu-catalog__link">Плазмолифтинг</a>
+												<a href="" class="submenu-catalog__link">Биоревитализация</a>
+												<a href="" class="submenu-catalog__link">Мезотерапия </a>
+												<a href="" class="submenu-catalog__link">Ботулинотерапия </a>
+												<a href="" class="submenu-catalog__link">Волюмизация radiesse</a>
+												<a href="" class="submenu-catalog__link">Коллагенотерапия </a>
+											</div>
+										</div>
+									</div>
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Нитевой лифтинг</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Нитевой лифтинг Aptos</a>
+												<a href="" class="submenu-catalog__link">Нитевой лифтинг Art Lift </a>
+											</div>
+										</div>
+									</div>
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Уход за лицом</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Голливудский уход Hydrafacial</a>
+												<a href="" class="submenu-catalog__link">Biologique Recherche</a>
+												<a href="" class="submenu-catalog__link">Уход на космецевтике ДМК</a>
+												<a href="" class="submenu-catalog__link">Уходовые программы REVER </a>
+												<a href="" class="submenu-catalog__link">Массаж лица</a>
+												<a href="" class="submenu-catalog__link">Аппаратный массаж лица Icoone</a>
+												<a href="" class="submenu-catalog__link">Микротоковая терапия </a>
+												<a href="" class="submenu-catalog__link">Пилинг </a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="submenu-catalog__body submenu-body" data-submenu="2">
+								<div class="submenu-catalog__wrapper">
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Коррекция фигуры</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Ulfit</a>
+												<a href="" class="submenu-catalog__link">Icoone laser тело </a>
+												<a href="" class="submenu-catalog__link">Velashape </a>
+												<a href="" class="submenu-catalog__link">R-sleek</a>
+												<a href="" class="submenu-catalog__link">Антицеллюлитный массаж ручной </a>
+												<a href="" class="submenu-catalog__link">Лимфодренажный массаж ручной</a>
+												<a href="" class="submenu-catalog__link">Медовый массаж</a>
+											</div>
+										</div>
+									</div>
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Спа процедуры<br>на косметике St.Barth</a>
+										</div>
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Лазерная эпиляция</a>
+										</div>
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Мануальный (ручной) массаж</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Классический</a>
+												<a href="" class="submenu-catalog__link">Калифорнийский</a>
+												<a href="" class="submenu-catalog__link">Рефлекторно-сегментарный</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="submenu-catalog__body submenu-plastic" data-submenu="3">
+								<div class="submenu-catalog__wrapper">
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Маммопластика</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Подтяжка груди</a>
+												<a href="" class="submenu-catalog__link">Увеличение груди</a>
+												<a href="" class="submenu-catalog__link">Уменьшение груди</a>
+												<a href="" class="submenu-catalog__link">Коррекция сосков</a>
+												<a href="" class="submenu-catalog__link">Уменьшение ариол</a>
+												<a href="" class="submenu-catalog__link">Липофилинг груди</a>
+											</div>
+										</div>
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Интимная пластика</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Уменьшение больших половых губ</a>
+												<a href="" class="submenu-catalog__link">Уменьшение малых половых губ</a>
+												<a href="" class="submenu-catalog__link">Редукция капюшона клитора</a>
+											</div>
+										</div>
+									</div>
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Блефаропластика</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Кантопексия</a>
+												<a href="" class="submenu-catalog__link">Верхняя блефаропластика</a>
+												<a href="" class="submenu-catalog__link">Нижняя трансконьюктивальная блефаропластика</a>
+												<a href="" class="submenu-catalog__link">Нижняя чрезкожная блефаропластика</a>
+												<a href="" class="submenu-catalog__link">Липофилинг нижнего века</a>
+												<a href="" class="submenu-catalog__link">Европеизация верхнего века</a>
+											</div>
+										</div>
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Липосакция</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Липосакция подбородка</a>
+												<a href="" class="submenu-catalog__link">Липосакция живота</a>
+												<a href="" class="submenu-catalog__link">Липосакция бедер</a>
+											</div>
+										</div>
+									</div>
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Пластика лица</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Броулифтинг</a>
+												<a href="" class="submenu-catalog__link">SMAS-подтяжка нижней трети лица и шеи</a>
+												<a href="" class="submenu-catalog__link">Булхорн</a>
+												<a href="" class="submenu-catalog__link">Липофилинг</a>
+											</div>
+										</div>
+										<div class="submenu-catalog__section">
+											<a href="" class="submenu-catalog__section-link">Пластика тела</a>
+											<div class="submenu-catalog__links">
+												<a href="" class="submenu-catalog__link">Абдоминопластика с переносом пупка</a>
+												<a href="" class="submenu-catalog__link">Миниабдоминопластика</a>
+												<a href="" class="submenu-catalog__link">Формирование нового пупка</a>
+												<a href="" class="submenu-catalog__link">Феморопластика</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="submenu-catalog__body submenu-problem" data-submenu="4">
+								<div class="submenu-catalog__wrapper">
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__title">Эстетическая косметология</div>
+										<div class="submenu-catalog__inner-col">
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Нос</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Носогубная складка</a>
+													<a href="" class="submenu-catalog__link">Морщины</a>
+													<a href="" class="submenu-catalog__link">Чёрные точки</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Подбородок</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Второй подбородок</a>
+													<a href="" class="submenu-catalog__link">Форма подбородка</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Шея декольте</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Лифтинг Нефертити</a>
+													<a href="" class="submenu-catalog__link">Дряблость</a>
+													<a href="" class="submenu-catalog__link">Кольца Венеры</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Лоб</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Морщины</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Губы</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Форма губ, старение губ, увеличение</a>
+													<a href="" class="submenu-catalog__link">Опущение уголков губ</a>
+													<a href="" class="submenu-catalog__link">Десневая улыбка</a>
+												</div>
+											</div>
+										</div>
+										<div class="submenu-catalog__inner-col">
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Нижняя треть лица</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Брыли/нечеткий овал лица</a>
+													<a href="" class="submenu-catalog__link">Локальные жировые отложения</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Кожа лица</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Сухая кожа , обезвоженная кожа</a>
+													<a href="" class="submenu-catalog__link">Жирная кожа</a>
+													<a href="" class="submenu-catalog__link">Пигментация</a>
+													<a href="" class="submenu-catalog__link">Розацеа</a>
+													<a href="" class="submenu-catalog__link">Чувствительная кожа</a>
+													<a href="" class="submenu-catalog__link">Морщины</a>
+													<a href="" class="submenu-catalog__link">Неоднородный цвет лица</a>
+													<a href="" class="submenu-catalog__link">Акне</a>
+													<a href="" class="submenu-catalog__link">Рубцы постакне</a>
+													<a href="" class="submenu-catalog__link">Рубцы шрамы</a>
+													<a href="" class="submenu-catalog__link">Отечность</a>
+													<a href="" class="submenu-catalog__link">Сосуды</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Волосы</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Повышенная жирность головы</a>
+													<a href="" class="submenu-catalog__link">Выпадение волос</a>
+													<a href="" class="submenu-catalog__link">Себорейный дерматит</a>
+												</div>
+											</div>
+										</div>
+										<div class="submenu-catalog__inner-col">
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Грудь</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Форма груди/обьем</a>
+													<a href="" class="submenu-catalog__link">Рубцы/шрамы</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Кисти</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Повышенная потливость</a>
+													<a href="" class="submenu-catalog__link">Возрастные изменения</a>
+													<a href="" class="submenu-catalog__link">Шрамы/рубцы</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Спина</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Акне</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Живот</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Растяжки</a>
+													<a href="" class="submenu-catalog__link">Локальные жировые отложения</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Бёдра</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Шрамы/рубцы</a>
+													<a href="" class="submenu-catalog__link">Целлюлит</a>
+													<a href="" class="submenu-catalog__link">Нежелательные волосы</a>
+													<a href="" class="submenu-catalog__link">Снижение тургора</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Бикини</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Нежелательные волосы</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="submenu-catalog__col">
+										<div class="submenu-catalog__title">Пластическая хирургия</div>
+										<div class="submenu-catalog__inner-col">
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Глаза</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Азиатское веко</a>
+													<a href="" class="submenu-catalog__link">Опущение уголков глаз</a>
+													<a href="" class="submenu-catalog__link">Нависшее веко/ грыжа верхнего века </a>
+													<a href="" class="submenu-catalog__link">Грыжи</a>
+													<a href="" class="submenu-catalog__link">Нососолезная борозда</a>
+													<a href="" class="submenu-catalog__link">Низкое положение бровей</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Нижняя треть лица</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Избыток кожи на лице, птоз</a>
+													<a href="" class="submenu-catalog__link">Возрастной птоз, травмы и дефекты носа и губ, большое расстояние между верхней губой и основанием носа</a>
+													<a href="" class="submenu-catalog__link">Восполнение утраченных объемов</a>
+													<a href="" class="submenu-catalog__link">Тяжелый подбородок</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Грудь</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Коррекция груди</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Живот</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Коррекция фигуры</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Бикини</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Хирургическая коррекция интимной зоны</a>
+												</div>
+											</div>
+											<div class="submenu-catalog__section">
+												<a href="" class="submenu-catalog__section-link">Бедро</a>
+												<div class="submenu-catalog__links">
+													<a href="" class="submenu-catalog__link">Излишки жировой ткани в области бедер, большие объемы</a>
+													<a href="" class="submenu-catalog__link">Лишний вес</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="submenu-catalog__body submenu-about" data-submenu="5">
+								<div class="submenu-catalog__wrapper">
+									<div class="submenu-catalog__links">
+										<a href="" class="submenu-catalog__link">Наша клиника</a>
+										<a href="" class="submenu-catalog__link">Лицензии</a>
+										<a href="" class="submenu-catalog__link">Новости</a>
+										<a href="" class="submenu-catalog__link">Контакты</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__bottom copyright">
+					<div class="copyright__wrapper">
+						<div class="copyright__body">
+							<div class="copyright__item">
+								<span class="js-copyright-year">2023</span>
+								Название организации
+								<script>
+									window.onload = function() {
+										document.querySelector('.js-copyright-year').innerText = new Date().getFullYear()
+									};
+								</script>
+							</div>
+							<a href="" data-popup="#policy" class="copyright__item">Политика конфиденциальности</a>
+							<a href="" data-popup="#consent" class="copyright__item">Согласие на обработку персональных данных</a>
+							<a href="https://websalt.ru" target="_blank" class="copyright__item">Создание сайта
+								<svg class="copyright__svg">
+									<use xlink:href="img/icons/icons.svg#logo_salt"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">Заголовок</div>
+					<button data-close type="button" class="popup__close">
+						<svg class="popup__close-svg">
+							<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__main">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-box">
+		<!-- Модалка шаринга -->
+		<div id="share-popup" aria-hidden="true" class="popup popup_center">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__header">
+						<div class="popup__title">Поделиться</div>
+						<button data-close type="button" class="popup__close">
+							<svg class="">
+								<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="popup__main">
+						<div class="share">
+							<div class="share__social">
+								<!-- uSocial -->
+								<script async src="https://usocial.pro/usocial/usocial.js?uid=21cd4b58eaf61697&v=6.1.5&_v=20240913221845" data-script="usocial" charset="utf-8"></script>
+								<div class="uSocial-Share" data-pid="b7450283dbc9e941ee22b283d6036804" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size48,eachCounter0,counter0,nomobile,mobile_position_right" data-social="vk,ok,telegram,wa,vi"></div>
+								<!-- /uSocial -->
+							</div>
+							<div class="share__copy-url">
+								<div class="form__line">
+									<label for="copyUrl" class="form__label">Ссылка на товар</label>
+									<input autocomplete="off" id="copyUrl" type="text" class="share__input form__input">
+									<svg class="form__clear-svg">
+										<use xlink:href="img/icons/icons.svg#input_clear"></use>
+									</svg>
+								</div>
+								<button type="button" class="share__button">Скопировать ссылку</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Модалка шаринга -->
+		<!-- Спасибо -->
+		<div id="thanks" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__header">
+						<div class="popup__title">Спасибо</div>
+						<button data-close type="button" class="popup__close">
+							<svg class="popup__close-svg">
+								<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="popup__main">
+						<div class="popup__text">Мы свяжемся с вами в ближайшее время для уточнения информации</div>
+						<button data-close type="button" class="popup__close">
+							Ok
+						</button>
+						<div class="popup__icon">
+							<img src="img/icons/popup__icon.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Спасибо -->
+		<!-- Заказать звонок -->
+		<div id="callback" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__header">
+						<div class="popup__title">Заказ звонка</div>
+						<button data-close type="button" class="popup__close">
+							<svg class="">
+								<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="popup__main">
+						<div class="popup__text">Оставьте контактные данные и мы вам перезвоним</div>
+						<div class="popup__form">
+							<form action="" data-parsley-validate data-parsley-trigger="change" required="" class="form">
+								<div class="form__line">
+									<label for="p-callback-2.1" class="form__label">Ваше имя</label>
+									<input id="p-callback-2.1" type="text" class="form__input">
+									<svg class="form__clear-svg">
+										<use xlink:href="img/icons/icons.svg#input_clear"></use>
+									</svg>
+								</div>
+								<div class="form__line">
+									<label for="p-callback-2.2" class="form__label">Телефон *</label>
+									<input required id="p-callback-2.2" type="tel" class="form__input js_phone">
+									<svg class="form__clear-svg">
+										<use xlink:href="img/icons/icons.svg#input_clear"></use>
+									</svg>
+								</div>
+								<div class="form__line">
+									<label for="p-callback-2.3" class="form__label">Комментарий</label>
+									<textarea id="p-callback-2.3" autocomplete="off" name="" placeholder="" class="form__input"></textarea>
+									<svg class="form__clear-svg">
+										<use xlink:href="img/icons/icons.svg#input_clear"></use>
+									</svg>
+								</div>
+								<div class="form__footer">
+									<button type="submit" class="form__button btn btn_red">Отправить</button>
+									<div class="form__consent">Отправляя данные, я даю свое <a href="" class="form__consent-link">согласие на обработку перс. данных</a></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Заказать звонок -->
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240913221845" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20240913221845"></script>
+</body>
+
+</html>

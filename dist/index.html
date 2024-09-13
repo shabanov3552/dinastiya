@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «dinastiya»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «dinastiya»</h1>
+		<div class="rootpage__info">
+			Особенности:
+		</div>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+			<li><a target="_blank" href="services.html">Услуги (тело)</a></li>
+			<li><a target="_blank" href="services-detail.html">Услуга детальная (тело)</a></li>
+			<li><a target="_blank" href="problems.html">Решение проблем</a></li>
+			<li><a target="_blank" href="problems-detail.html">Решение проблем детальная</a></li>
+			<li><a target="_blank" href="plastic-1.html">Пластическая хир. 1-ур</a></li>
+			<li><a target="_blank" href="plastic-2.html">Пластическая хир. 2-ур</a></li>
+			<li><a target="_blank" href="plastic-3.html">Пластическая хир. 3-ур</a></li>
+			<li><a target="_blank" href="price.html">Цены</a></li>
+			<li><a target="_blank" href="specialists.html">Специалисты</a></li>
+			<li><a target="_blank" href="specialist-detail.html">Специалист детальная</a></li>
+			<li><a target="_blank" href="promotions.html">Акции</a></li>
+			<li><a target="_blank" href="promotions-detail.html">Акция детальная</a></li>
+			<li><a target="_blank" href="licenses.html">Лицензии</a></li>
+			<li><a target="_blank" href="contacts.html">Контакты</a></li>
+			<li><a target="_blank" href="news.html">Новости</a></li>
+			<li><a target="_blank" href="news-detail.html">Новость детальная</a></li>
+			<li><a target="_blank" href="search.html">Поиск</a></li>
+			<li><a target="_blank" href="search-empty.html">Поиск пустая</a></li>
+			<li><a target="_blank" href="about.html">О Клинике</a></li>
+		</ol>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background: linear-gradient(90deg, #60e3e0 0%, #c4ebda 100%);
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #fff;
+		transition: all 0.1s ease 0s;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #3b3d3e;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	a:visited:hover {
+		color: #fff;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #000;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #000;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+		display: none;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>

@@ -1,0 +1,128 @@
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__header">
+				<div class="popup__title">Заголовок</div>
+				<button data-close type="button" class="popup__close">
+					<svg class="popup__close-svg">
+						<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="popup__main">
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-box">
+	<!-- Модалка шаринга -->
+	<div id="share-popup" aria-hidden="true" class="popup popup_center">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">Поделиться</div>
+					<button data-close type="button" class="popup__close">
+						<svg class="">
+							<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__main">
+					<div class="share">
+						<div class="share__social">
+							<!-- uSocial -->
+							<script async src="https://usocial.pro/usocial/usocial.js?uid=21cd4b58eaf61697&v=6.1.5" data-script="usocial" charset="utf-8"></script>
+							<div class="uSocial-Share" data-pid="b7450283dbc9e941ee22b283d6036804" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size48,eachCounter0,counter0,nomobile,mobile_position_right" data-social="vk,ok,telegram,wa,vi"></div>
+							<!-- /uSocial -->
+						</div>
+						<div class="share__copy-url">
+							<div class="form__line">
+								<label for="copyUrl" class="form__label">Ссылка на товар</label>
+								<input autocomplete="off" id="copyUrl" type="text" class="share__input form__input">
+								<svg class="form__clear-svg">
+									<use xlink:href="img/icons/icons.svg#input_clear"></use>
+								</svg>
+							</div>
+							<button type="button" class="share__button">Скопировать ссылку</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Модалка шаринга -->
+	<!-- Спасибо -->
+	<div id="thanks" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">Спасибо</div>
+					<button data-close type="button" class="popup__close">
+						<svg class="popup__close-svg">
+							<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__main">
+					<div class="popup__text">Мы свяжемся с вами в ближайшее время для уточнения информации</div>
+					<button data-close type="button" class="popup__close">
+						Ok
+					</button>
+					<div class="popup__icon">
+						<img src="@img/icons/popup__icon.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Спасибо -->
+	<!-- Заказать звонок -->
+	<div id="callback" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title">Заказ звонка</div>
+					<button data-close type="button" class="popup__close">
+						<svg class="">
+							<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="popup__main">
+					<div class="popup__text">Оставьте контактные данные и мы вам перезвоним</div>
+					<div class="popup__form">
+						<form action="" data-parsley-validate data-parsley-trigger="change" required="" class="form">
+							<div class="form__line">
+								<label for="p-callback-2.1" class="form__label">Ваше имя</label>
+								<input id="p-callback-2.1" type="text" class="form__input">
+								<svg class="form__clear-svg">
+									<use xlink:href="img/icons/icons.svg#input_clear"></use>
+								</svg>
+							</div>
+							<div class="form__line">
+								<label for="p-callback-2.2" class="form__label">Телефон *</label>
+								<input required id="p-callback-2.2" type="tel" class="form__input js_phone">
+								<svg class="form__clear-svg">
+									<use xlink:href="img/icons/icons.svg#input_clear"></use>
+								</svg>
+							</div>
+							<div class="form__line">
+								<label for="p-callback-2.3" class="form__label">Комментарий</label>
+								<textarea id="p-callback-2.3" autocomplete="off" name="" placeholder="" class="form__input"></textarea>
+								<svg class="form__clear-svg">
+									<use xlink:href="img/icons/icons.svg#input_clear"></use>
+								</svg>
+							</div>
+							<div class="form__footer">
+								<button type="submit" class="form__button btn btn_red">Отправить</button>
+								<div class="form__consent">Отправляя данные, я даю свое <a href="" class="form__consent-link">согласие на обработку перс. данных</a></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Заказать звонок -->
+</div>

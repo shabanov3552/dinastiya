@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>@@title</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper @@modClass">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top">
+					<div class="header__left">
+						<a href="" class="header__link">
+							<img src="@img/icons/icon_point-grey.svg" alt="">
+							<span>Новокузнецк, ул. Пирогова, 10</span>
+						</a>
+						<a href="mailto:clinicadinasty@yandex.ru" class="header__link">
+							<img src="@img/icons/icon_mail-grey.svg" alt="">
+							<span>clinicadinasty@yandex.ru</span>
+						</a>
+					</div>
+					<a href="" class="header__logo"><img src="@img/logo.png" alt=""></a>
+					<div class="header__right">
+						<div class="header__phones">
+							<img src="@img/icons/icon_phone-grey.svg" alt="">
+							<a href="tel:+7 (962) 734-16-79" class="header__link">
+								<span>+7 (962) 734-16-79</span>
+							</a>
+							<a href="tel:+7 (3843) 209-679" class="header__link">
+								<span>+7 (3843) 209-679</span>
+							</a>
+						</div>
+						<div class="header__messengers">
+							<a href="" class="header__link">
+								<img src="@img/icons/whatsapp.svg" alt="">
+							</a>
+							<a href="" class="header__link">
+								<img src="@img/icons/telegram.svg" alt="">
+							</a>
+						</div>
+						<button type="button" class="header__button" data-popup="#callback">Запись к врачу</button>
+					</div>
+					<button type="button" class="header__burger icon-menu"><span></span></button>
+				</div>
+				<div class="header__catalog menu-catalog">
+					<nav class="menu-catalog__body">
+						<div class="menu-catalog__list">
+							@@include('./_menu-catalog-list.htm',{})
+						</div>
+						<div class="submenu-catalog">
+							@@include('./_submenu-face.htm',{})
+							@@include('./_submenu-body.htm',{})
+							@@include('./_submenu-plastic.htm',{})
+							@@include('./_submenu-problem.htm',{})
+							@@include('./_submenu-about.htm',{})
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>

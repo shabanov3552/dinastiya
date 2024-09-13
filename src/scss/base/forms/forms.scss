@@ -1,0 +1,174 @@
+//<FORM>
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input::-webkit-passman-key {
+	display: none;
+	width: 0;
+}
+
+textarea {
+	min-height: 87px;
+	resize: vertical;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+// Снипет (HTML):
+
+.form {
+
+	// .form__line
+
+	&__line {
+		position: relative;
+
+		&._form-focus {
+			.form__label {
+				top: -20px;
+				left: 0;
+				font-size: 12px;
+				line-height: 22px;
+			}
+		}
+	}
+
+	// .form__label
+
+	&__label {
+		transition: all 0.3s ease 0s;
+		position: absolute;
+		top: 13px;
+		left: 16px;
+		color: rgba(0, 0, 0, 0.604535);
+		font-size: 18px;
+		line-height: 22px;
+		pointer-events: none;
+
+		.has-error & {
+			top: 35px;
+		}
+	}
+
+	// .form__input
+
+	&__input {
+		outline: none;
+		background: #FFFFFF;
+		border: 1px solid rgba(0, 0, 0, 0.230742);
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		border-radius: 5px;
+		height: 48px;
+		padding: rem(16) rem(32) rem(16) rem(16);
+		width: 100%;
+
+		.has-error & {
+			border: 2px solid var(--red-error);
+		}
+
+		&.parsley-error {
+			border: 2px solid var(--red-error);
+		}
+	}
+
+	// .form__clear-svg
+
+	&__clear-svg {
+		cursor: pointer;
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		padding: rem(8);
+		top: 8px;
+		right: 4px;
+		display: none;
+		transition: all 0.3s ease 0s;
+		border-radius: 4px;
+
+		&:hover {
+			background: rgba(61, 74, 98, 0.07);
+
+			use {
+				fill: #AA2040;
+			}
+		}
+
+		&._active {
+			display: block;
+		}
+
+		use {
+			fill: #8A8A8A;
+		}
+	}
+
+	// .form__viewpass
+
+	&__viewpass {
+		width: 25px;
+		height: 23px;
+		background: url(../img/icons/icon_pass.svg);
+		position: absolute;
+		right: 40px;
+		top: 12px;
+		cursor: pointer;
+		opacity: 0;
+
+		&._viewpass-active {
+			background: url(../img/icons/icon_pass-active.svg);
+		}
+
+		._form-focus & {
+			opacity: 0.3;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.parsley-errors-list {
+	padding: rem(10) 0;
+	color: var(--red-error);
+	margin-bottom: rem(-20);
+}
+
+//</FORM>
+
+
+// <CHECK>
+// Снипет (HTML): chk
+@import "checkbox";
+
+// <RADIO>
+// Снипет (HTML): opt
+@import "radio";
+
+// <SELECT>
+// Снипет (HTML): sel
+@import "select";
+
+// <RATING>
+// Снипет (HTML): rating
+// @import "rating";
+
+// <QUANTITY>
+// Снипет (HTML): qa
+@import "quantity";
+
+// <RANGE>
+// Снипет (HTML):
+// @import "range";
+
+// <CALENDAR>
+// Снипет (HTML):
+// @import "datepicker";
