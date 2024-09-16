@@ -20,7 +20,7 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__top">
-					<div class="header__left">
+					<div class="header__left" data-da=".menu-catalog__body, 1199.98, 0">
 						<a href="" class="header__link">
 							<img src="@img/icons/icon_point-grey.svg" alt="">
 							<span>Новокузнецк, ул. Пирогова, 10</span>
@@ -32,7 +32,7 @@
 					</div>
 					<a href="" class="header__logo"><img src="@img/logo.png" alt=""></a>
 					<div class="header__right">
-						<div class="header__phones">
+						<div class="header__phones" data-da=".menu-catalog__body, 1199.98, 1">
 							<img src="@img/icons/icon_phone-grey.svg" alt="">
 							<a href="tel:+7 (962) 734-16-79" class="header__link">
 								<span>+7 (962) 734-16-79</span>
@@ -59,6 +59,11 @@
 							@@include('./_menu-catalog-list.htm',{})
 						</div>
 						<div class="submenu-catalog">
+							<button type="button" class="submenu-catalog__back js-back-to-menu">
+								<svg width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.888672 14.1707L14.3445 0.714844L17.1115 3.48178L5.767 14.8262L17.1115 26.1707L14.3445 28.9376L0.888672 15.4818L1.54422 14.8262L0.888672 14.1707Z" fill="black" />
+								</svg>
+							</button>
 							@@include('./_submenu-face.htm',{})
 							@@include('./_submenu-body.htm',{})
 							@@include('./_submenu-plastic.htm',{})

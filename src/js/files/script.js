@@ -155,15 +155,22 @@ function dropdownAction(e, ddWrapper, ddActive) {
 //#endregion
 
 //#region Открытие/закрытие меню-каталога
+
 document.addEventListener('DOMContentLoaded', () => {
    const menuCatalog = document.querySelector('.menu-catalog');
    const menuLinks = menuCatalog.querySelectorAll('.menu-catalog__link[data-parent]');
    const menuBlocks = menuCatalog.querySelectorAll('.submenu-catalog__body[data-submenu]');
    let submenuTimer;
 
+   menuBlocks.forEach(block => block.hidden = true);
+
    function closeAllSubmenu() {
-      menuBlocks.forEach(block => { block.classList.remove('submenu-open'); })
-      menuLinks.forEach(link => { link.classList.remove('active'); })
+      menuBlocks.forEach(block => {
+         block.classList.remove('submenu-open');
+         block.hidden = true;
+      })
+      menuLinks.forEach(link => { link.classList.remove('active'); });
+      document.documentElement.classList.remove('submenu-open');
    }
 
    function openSubmenu(target) {
@@ -171,13 +178,16 @@ document.addEventListener('DOMContentLoaded', () => {
       target.classList.add('active')
       menuBlocks.forEach(block => {
          if (block.dataset.submenu == target.dataset.parent) {
-            block.classList.add('submenu-open');
+            block.hidden = false;
+            submenuTimer = setTimeout(() => {
+               block.classList.add('submenu-open');
+            }, 400)
          }
       })
+      document.documentElement.classList.add('submenu-open');
    }
 
    document.addEventListener('pointerover', e => {
-      console.log('qwe');
       const target = e.target;
 
       if (!target.closest('.menu-catalog')) {
@@ -188,17 +198,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (target.closest('[data-parent]')) {
          clearTimeout(submenuTimer);
-
-         submenuTimer = setTimeout(() => {
-            openSubmenu(target);
-         }, 300)
+         openSubmenu(target);
       }
    })
    document.addEventListener("click", function (e) {
       if (e.target.closest('[data-parent]') && e.pointerType === 'touch') {
          e.preventDefault();
       }
-      console.log(e.pointerType);
+      if (e.target.closest('.js-back-to-menu')) { closeAllSubmenu() }
    });
+   // document.addEventListener("touchstart", function (e) {
+   //    if (e.target.closest('[data-parent]')) {
+   //       console.log('qwe');
+   //       e.preventDefault();
+   //    }
+   // });
+   // document.addEventListener("touchstart", function (e) {
+   //    if (e.target.closest('[data-parent]')) {
+   //       e.preventDefault();
+   //    }
+   // }, { passive: false });
 })
+
 //#endregion

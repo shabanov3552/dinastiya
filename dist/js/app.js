@@ -5021,23 +5021,31 @@
             const menuLinks = menuCatalog.querySelectorAll(".menu-catalog__link[data-parent]");
             const menuBlocks = menuCatalog.querySelectorAll(".submenu-catalog__body[data-submenu]");
             let submenuTimer;
+            menuBlocks.forEach((block => block.hidden = true));
             function closeAllSubmenu() {
                 menuBlocks.forEach((block => {
                     block.classList.remove("submenu-open");
+                    block.hidden = true;
                 }));
                 menuLinks.forEach((link => {
                     link.classList.remove("active");
                 }));
+                document.documentElement.classList.remove("submenu-open");
             }
             function openSubmenu(target) {
                 closeAllSubmenu();
                 target.classList.add("active");
                 menuBlocks.forEach((block => {
-                    if (block.dataset.submenu == target.dataset.parent) block.classList.add("submenu-open");
+                    if (block.dataset.submenu == target.dataset.parent) {
+                        block.hidden = false;
+                        submenuTimer = setTimeout((() => {
+                            block.classList.add("submenu-open");
+                        }), 400);
+                    }
                 }));
+                document.documentElement.classList.add("submenu-open");
             }
             document.addEventListener("pointerover", (e => {
-                console.log("qwe");
                 const target = e.target;
                 if (!target.closest(".menu-catalog")) {
                     closeAllSubmenu();
@@ -5046,14 +5054,12 @@
                 }
                 if (target.closest("[data-parent]")) {
                     clearTimeout(submenuTimer);
-                    submenuTimer = setTimeout((() => {
-                        openSubmenu(target);
-                    }), 300);
+                    openSubmenu(target);
                 }
             }));
             document.addEventListener("click", (function(e) {
                 if (e.target.closest("[data-parent]") && e.pointerType === "touch") e.preventDefault();
-                console.log(e.pointerType);
+                if (e.target.closest(".js-back-to-menu")) closeAllSubmenu();
             }));
         }));
         window["FLS"] = true;
