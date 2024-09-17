@@ -1,1 +1,24 @@
 // Заголовки, общие БЄМ блоки и проче...
+.license-link {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 157%;
+   color: #000;
+   display: flex;
+   gap: 16px;
+   align-items: center;
+
+   img {
+      width: 20px;
+      height: 20px;
+      flex: 0 0 20px;
+   }
+
+   &:hover {
+      text-decoration: underline;
+   }
+
+   @media (max-width:$md) {
+      justify-content: center;
+   }
+}

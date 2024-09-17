@@ -44,3 +44,11 @@
 .swiper-button-lock {
 	display: none !important;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+	svg {
+		width: 18px;
+		height: 27px;
+	}
+}
