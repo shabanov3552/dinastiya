@@ -8,8 +8,8 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20240917012010" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240917012010">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20240923213420" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240923213420">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -437,19 +437,673 @@
 			</div>
 		</header>
 		<main class="page">
+			<div class="main-slider">
+				<div class="main-slider__slider swiper">
+					<button type="button" class="swiper-button-prev">
+						<svg class="">
+							<use xlink:href="img/icons/icons.svg#icon_slider-left"></use>
+						</svg>
+					</button>
+					<button type="button" class="swiper-button-next">
+						<svg class="">
+							<use xlink:href="img/icons/icons.svg#icon_slider-right"></use>
+						</svg>
+					</button>
+					<div class="main-slider__wrapper swiper-wrapper">
+						<div class="main-slider__slide swiper-slide">
+							<div class="main-slider__image-ibg"><img src="img/main-slider-image-1.webp" alt=""></div>
+							<div class="main-slider__content">
+								<div class="main-slider__title">Клиника косметологии нового поколения</div>
+								<div class="main-slider__text">Мы предлагаем большой выбор косметологических услуг,  приходите и почувствуйте себя обновлённой</div>
+								<a href="" class="main-slider__link">Запись к врачу</a>
+							</div>
+						</div>
+						<div class="main-slider__slide swiper-slide">
+							<div class="main-slider__image-ibg"><img src="img/main-slider-image-2.webp" alt=""></div>
+							<div class="main-slider__content">
+								<div class="main-slider__title">Лазерное омоложение СО2 </div>
+								<div class="main-slider__text">Омоложение, коррекция рубцов, удаление новообразований с помощью MORE–XEL BISON</div>
+								<a href="" class="main-slider__link">Запись к врачу</a>
+							</div>
+						</div>
+						<div class="main-slider__slide swiper-slide">
+							<div class="main-slider__image-ibg"><img src="img/main-slider-image-3.webp" alt=""></div>
+							<div class="main-slider__content">
+								<div class="main-slider__title">Вам больше не придется краснеть</div>
+								<div class="main-slider__text">Vbeam Perfecta</div>
+								<a href="" class="main-slider__link">Запись к врачу</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popular-servises">
+				<div class="popular-servises__container">
+					<div class="popular-servises__headline">
+						<button type="button" class="swiper-button-prev">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon_slider-left"></use>
+							</svg>
+						</button>
+						<div class="popular-servises__title">Популярные услуги</div>
+						<button type="button" class="swiper-button-next">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon_slider-right"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="popular-servises__slider swiper">
+						<div class="popular-servises__wrapper swiper-wrapper">
+							<div class="popular-servises__slide swiper-slide">
+								<a href="" class="popular-servises__link">
+									<img src="img/popular-servises-1.webp" alt="">
+									<span>Лазерное омоложение СО2</span>
+								</a>
+							</div>
+							<div class="popular-servises__slide swiper-slide">
+								<a href="" class="popular-servises__link">
+									<img src="img/popular-servises-2.webp" alt="">
+									<span>Vbeam Perfecta</span>
+								</a>
+							</div>
+							<div class="popular-servises__slide swiper-slide">
+								<a href="" class="popular-servises__link">
+									<img src="img/popular-servises-3.webp" alt="">
+									<span>СМАС лифтинг UltraFormer</span>
+								</a>
+							</div>
+							<div class="popular-servises__slide swiper-slide">
+								<a href="" class="popular-servises__link">
+									<img src="img/popular-servises-4.webp" alt="">
+									<span>Icoone laser тело</span>
+								</a>
+							</div>
+							<div class="popular-servises__slide swiper-slide">
+								<a href="" class="popular-servises__link">
+									<img src="img/popular-servises-5.webp" alt="">
+									<span>Vbeam Perfecta</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-about">
+				<div class="main-about__container">
+					<div class="main-about__image-ibg"><img src="img/main-about.webp" alt=""></div>
+					<div class="main-about__content">
+						<div class="main-about__title">О клинике</div>
+						<div class="main-about__descr">Клиника косметологии «Династия» основана дипломированным специалистом в 4-м поколении, врачом дерматокосметологом – Анастасией Ситниковой и кандидатом медицинских наук, врачом анестезиологом-реаниматологом высшей категории – Павлом Ситниковым</div>
+						<div class="main-about__video">
+							<button type="button" data-popup="#video" data-popup-youtube="dLpxtAcapv0" class="video-btn">
+								<img src="img/icons/triangle.svg" alt="">
+								Видео о нас
+							</button>
+						</div>
+						<div class="main-about__descr">Врачи «Династия» осуществляют комплексный подход к омоложению вашего лица и тела. И помогают сохранить достигнутый результат на долгое время.</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-features">
+				<div class="main-features__container">
+					<div class="main-features__item">
+						<img src="img/main-features-1.svg" alt="">
+						<div class="main-features__text">Высококлассное оборудование и препараты</div>
+					</div>
+					<div class="main-features__item">
+						<img src="img/main-features-2.svg" alt="">
+						<div class="main-features__text">Многообразие аппаратов и методик</div>
+					</div>
+					<div class="main-features__item">
+						<img src="img/main-features-3.svg" alt="">
+						<div class="main-features__text">Врачи с высокой квалификацией</div>
+					</div>
+					<div class="main-features__item">
+						<img src="img/main-features-4.svg" alt="">
+						<div class="main-features__text">Постоянное внедрение новых технологий</div>
+					</div>
+				</div>
+			</div>
+			<div class="zones">
+				<div class="zones__container">
+					<div class="zones__header">
+						<div class="zones__title">Не знаете какая процедура вам необходима?</div>
+						<div class="zones__subtitle">выберите зону, которая вас интересует</div>
+					</div>
+					<div class="zones__tabs-wrapper">
+						<div data-tabs class="zones__tabs first-level-zone">
+							<nav data-tabs-titles class="zones__navigation">
+								<button type="button" class="zones__nav-btn _tab-active">Эстетическая косметология</button>
+								<button type="button" class="zones__nav-btn">Пластическая хирургия</button>
+							</nav>
+							<div data-tabs-body class="zones__content">
+								<div class="zones__body">
+									<div data-tabs class="zones__tabs second-level-zone">
+										<nav data-tabs-titles class="zones__navigation">
+											<button type="button" class="zones__nav-btn _tab-active">Лицо</button>
+											<button type="button" class="zones__nav-btn">Тело</button>
+										</nav>
+										<div data-tabs-body class="zones__content">
+											<div class="zones__body">
+												<div class="zones__links-block">
+													<a href="" class="zones__link">Кожа лица</a>
+													<a href="" class="zones__link">Нос</a>
+													<a href="" class="zones__link">Подбородок</a>
+													<a href="" class="zones__link">Шея, декольте</a>
+													<a href="" class="zones__link">Лоб</a>
+													<a href="" class="zones__link">Губы</a>
+													<a href="" class="zones__link">Нижняя треть</a>
+													<a href="" class="zones__link">Волосы</a>
+												</div>
+												<div class="submenu-zone submenu-zone_face">
+													<div class="submenu-zone__image-ibg"><img src="img/face-photo.webp" alt=""></div>
+													<div class="submenu-zone__list">
+														<div class="submenu-zone__chunk submenu-zone__chunk_volos dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_nos dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_guby dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_koza dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_podborodok dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_sheya dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_lob dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_niz-tret dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="zones__body">
+												<div class="zones__links-block">
+													<a href="" class="zones__link">Грудь</a>
+													<a href="" class="zones__link">Кисти</a>
+													<a href="" class="zones__link">Спина</a>
+													<a href="" class="zones__link">Живот</a>
+													<a href="" class="zones__link">Бёдра</a>
+													<a href="" class="zones__link">Бикини</a>
+												</div>
+												<div class="submenu-zone submenu-zone_body">
+													<div class="submenu-zone__image-ibg submenu-zone__image-ibg_contain"><img src="img/body-photo.webp" alt=""></div>
+													<div class="submenu-zone__list">
+														<div class="submenu-zone__chunk submenu-zone__chunk_grud dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_kisti dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_spina dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_zivot dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_bedra dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_bikini dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="zones__body">
+									<div data-tabs class="zones__tabs second-level-zone">
+										<nav data-tabs-titles class="zones__navigation">
+											<button type="button" class="zones__nav-btn _tab-active">Лицо</button>
+											<button type="button" class="zones__nav-btn">Тело</button>
+										</nav>
+										<div data-tabs-body class="zones__content">
+											<div class="zones__body">
+												<div class="zones__links-block">
+													<a href="" class="zones__link">Глаза</a>
+													<a href="" class="zones__link">Нижняя треть лица</a>
+												</div>
+												<div class="submenu-zone submenu-zone_face">
+													<div class="submenu-zone__image-ibg"><img src="img/face-photo.webp" alt=""></div>
+													<div class="submenu-zone__list">
+														<div class="submenu-zone__chunk submenu-zone__chunk_glaza dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_niz-tret dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="zones__body">
+												<div class="zones__links-block">
+													<a href="" class="zones__link">Грудь</a>
+													<a href="" class="zones__link">Живот</a>
+													<a href="" class="zones__link">Бикини</a>
+													<a href="" class="zones__link">Бедро</a>
+												</div>
+												<div class="submenu-zone submenu-zone_body">
+													<div class="submenu-zone__image-ibg submenu-zone__image-ibg_contain"><img src="img/body-photo.webp" alt=""></div>
+													<div class="submenu-zone__list">
+														<div class="submenu-zone__chunk submenu-zone__chunk_grud dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_zivot dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_bedra dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+														<div class="submenu-zone__chunk submenu-zone__chunk_bikini dropdown" data-dropdown>
+															<button class="submenu-zone__btn dropdown__button" data-dropdown-button>+</button>
+															<div class="submenu-zone__block dropdown__block">
+																<div class="submenu-zone__links dropdown__links">
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																	<a href="" class="submenu-zone__link dropdown__link">Ссылка</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-promo">
+				<div class="promo-block">
+					<div class="promo-block__container">
+						<div class="promo-block__header">
+							<div class="promo-block__title">Акции</div>
+							<div class="promo-block__navigations">
+								<button type="button" class="swiper-button-prev">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon_slider-left"></use>
+									</svg>
+								</button>
+								<button type="button" class="swiper-button-next">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon_slider-right"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="promo-block__slider swiper">
+							<div class="promo-block__wrapper swiper-wrapper">
+								<div class="promo-block__slide swiper-slide">
+									<div class="promo-block__card">
+										<div class="promo-block__image-ibg"><img src="img/promo-block-1.webp" alt=""></div>
+										<div class="promo-block__name">Новый препарат
+											«МИОТОКС»</div>
+										<div class="promo-block__card-bottom">
+											<div class="promo-block__text">С 1 мая в нашем ассортименте появился новый ботулинотоксин — МИОТОКС. Весь месяц будет действовать уникальная цена 300 ₽/ед. на данный препарат.</div>
+											<a href="" class="promo-block__link"><img src="img/icons/arrow-link.svg" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="promo-block__slide swiper-slide">
+									<div class="promo-block__card">
+										<div class="promo-block__image-ibg"><img src="img/promo-block-2.webp" alt=""></div>
+										<div class="promo-block__name">«Знакомство с процедурой»</div>
+										<div class="promo-block__card-bottom">
+											<div class="promo-block__text">Дарим скидку 50% для тех, кто делает процедуру лазерная эпиляция впервые.</div>
+											<a href="" class="promo-block__link"><img src="img/icons/arrow-link.svg" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="promo-block__slide swiper-slide">
+									<div class="promo-block__card">
+										<div class="promo-block__image-ibg"><img src="img/promo-block-1.webp" alt=""></div>
+										<div class="promo-block__name">Новый препарат
+											«МИОТОКС»</div>
+										<div class="promo-block__card-bottom">
+											<div class="promo-block__text">С 1 мая в нашем ассортименте появился новый ботулинотоксин — МИОТОКС. Весь месяц будет действовать уникальная цена 300 ₽/ед. на данный препарат.</div>
+											<a href="" class="promo-block__link"><img src="img/icons/arrow-link.svg" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="promo-block__slide swiper-slide">
+									<div class="promo-block__card">
+										<div class="promo-block__image-ibg"><img src="img/promo-block-2.webp" alt=""></div>
+										<div class="promo-block__name">«Знакомство с процедурой»</div>
+										<div class="promo-block__card-bottom">
+											<div class="promo-block__text">Дарим скидку 50% для тех, кто делает процедуру лазерная эпиляция впервые.</div>
+											<a href="" class="promo-block__link"><img src="img/icons/arrow-link.svg" alt=""></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews">
+					<div class="reviews__container">
+						<div class="reviews__title">Отзывы о нас</div>
+						<review-lab data-widgetid="66f136d0eb335c2e01aca709"></review-lab>
+						<script src="https://app.reviewlab.ru/widget/index-es2015.js?_v=20240923213420" defer></script>
+					</div>
+				</div>
+			</div>
+			<div class="map">
+				<div class="map__contacts">
+					<div class="contacts-map-card">
+						<a href="" class="contacts-map-card__link">
+							<img src="img/icons/icon_point-turquoise.svg" alt="">
+							<span>Новокузнецк, <br> ул. Пирогова, дом 10</span>
+						</a>
+						<div class="contacts-map-card__phones">
+							<img src="img/icons/icon_phone-turquoise.svg" alt="">
+							<a href="tel:+7 (962) 734-16-79" class="contacts-map-card__link">
+								<span>+7 (962) 734-16-79</span>
+							</a>
+							<a href="tel:+7 (3843) 209-679" class="contacts-map-card__link">
+								<span>+7 (3843) 209-679</span>
+							</a>
+						</div>
+						<a href="mailto:clinicadinasty@yandex.ru" class="contacts-map-card__link">
+							<img src="img/icons/icon_mail-turquoise.svg" alt="">
+							<span>clinicadinasty@yandex.ru</span>
+						</a>
+						<a href="" class="contacts-map-card__link contacts-map-card__link_color-turquoise">
+							<img src="img/icons/telegram.svg" alt="">
+							<span>Написать в Телеграм</span>
+						</a>
+						<a href="" class="contacts-map-card__link contacts-map-card__link_color-turquoise">
+							<img src="img/icons/whatsapp.svg" alt="">
+							<span>Написать в Ватсап</span>
+						</a>
+						<a href="" class="contacts-map-card__link">
+							<img src="img/icons/icon_watch.svg" alt="">
+							<span>ПН–СБ с 9:00 до 20:00 <br> ВС с 9:00 до 18:00</span>
+						</a>
+					</div>
+				</div>
+				<div class="map__place"><img src="img/place-photo.webp" alt=""></div>
+				<div id="map"></div>
+				<script>
+					if (document.querySelector('#map')) {
+						mapAdd();
+
+						function mapAdd() {
+							let tag = document.createElement('script');
+							tag.src = "https://api-maps.yandex.ru/2.1/?apikey=0aa2f6b6-353d-4a10-bb62-97763a975ef4&lang=ru_RU";
+							let firstScriptTag = document.getElementsByTagName('script')[0];
+							firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+						}
+						setTimeout(function() {
+
+							ymaps.ready(init);
+
+							function init() {
+								var myMap = new ymaps.Map("map", {
+									center: [53.76507407075364, 87.11214850000006],
+									zoom: 17,
+									controls: ['zoomControl'],
+								});
+								let addresFirst = new ymaps.Placemark([53.76507407075364, 87.11214850000006], {}, {
+									iconLayout: 'default#imageWithContent',
+									iconImageHref: 'img/icons/map-marker.svg',
+									iconImageSize: [54, 78],
+									iconImageOffset: [-30, -60],
+									iconContentOffset: [0, 0],
+								});
+								myMap.geoObjects.add(addresFirst);
+								myMap.behaviors.disable('scrollZoom');
+							}
+
+						}, 1000);
+					}
+				</script>
+			</div>
 		</main>
+		<div class="main-form">
+			<div class="main-form__container">
+				<div class="main-form__from-wrapper">
+					<div class="main-form__title">Запись на прием</div>
+					<form action="" class="main-form__form" data-parsley-validate data-parsley-trigger="change">
+						<div class="form__line">
+							<label for="" class="form__label">Ваше имя *</label>
+							<input required id="" type="text" name="" class="form__input">
+							<svg class="form__clear-svg">
+								<use xlink:href="img/icons/icons.svg#input_clear"></use>
+							</svg>
+						</div>
+						<div class="form__line">
+							<label for="" class="form__label">Телефон *</label>
+							<input required id="" type="tel" name="" class="form__input js_phone">
+							<svg class="form__clear-svg">
+								<use xlink:href="img/icons/icons.svg#input_clear"></use>
+							</svg>
+						</div>
+						<div class="form__line">
+							<label for="" class="form__label">E-mail</label>
+							<input id="" type="email" name="" class="form__input">
+							<svg class="form__clear-svg">
+								<use xlink:href="img/icons/icons.svg#input_clear"></use>
+							</svg>
+						</div>
+						<div class="form__line">
+							<select name="procedure" data-show-selected>
+								<option value selected>Выберите процедуру</option>
+								<option value="1">Пункт №1</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+							</select>
+						</div>
+						<div class="form__row">
+							<button type="submit" class="form__button">Отправить</button>
+							<div class="form__consent">Отправляя данные, вы соглашаетесь с <a href="" class="form__consent-link">политикой конфиденциальности</a></div>
+						</div>
+					</form>
+				</div>
+				<div class="main-form__photo">
+					<div class="main-form__photo-ibg"><img src="img/founder-photo.webp" alt=""></div>
+					<div class="main-form__photo-caption">Анастасия Ситникова, <br> сооснователь и ведущий врач</div>
+				</div>
+			</div>
+		</div>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__menu">
+						<a href="" class="footer__link">Лицо</a>
+						<a href="" class="footer__link">Тело</a>
+						<a href="" class="footer__link">Пластическая хирургия</a>
+						<a href="" class="footer__link">Решение проблем</a>
+						<a href="" class="footer__link">Цены</a>
+						<a href="" class="footer__link">Акции</a>
+						<a href="" class="footer__link">Специалисты</a>
+						<a href="" class="footer__link">О компании</a>
+					</div>
+					<div class="footer__license" data-da=".footer__bottom, 767.98, 0">
+						<a href="" class="license-link">
+							<img src="img/icons/icon_doc.svg" alt="">
+							<span>Лицензия: № ЛО-42-01-006423</span>
+						</a>
+					</div>
+				</div>
+				<div class="footer__contacts contacts-footer">
+					<a href="tel:+7 900 123-45-67" class="contacts-footer__link">
+						<img src="img/icons/icon_phone-turquoise.svg" alt="">
+						<span>+7 900 123-45-67</span>
+					</a>
+					<a href="" class="contacts-footer__link">
+						<img src="img/icons/icon_watch.svg" alt="">
+						<span>ПН–СБ с 9:00 до 20:00 <br> ВС с 9:00 до 18:00</span>
+					</a>
+					<a href="mailto:info@mail.ru" class="contacts-footer__link">
+						<img src="img/icons/icon_mail-turquoise.svg" alt="">
+						<span>info@mail.ru</span>
+					</a>
+					<a href="" class="contacts-footer__link">
+						<img src="img/icons/icon_point-turquoise.svg" alt="">
+						<span>Новокузнецк, ул. Пирогова, дом 10</span>
+					</a>
+					<a href="" class="contacts-footer__link contacts-footer__link_color-turquoise">
+						<img src="img/icons/telegram.svg" alt="">
+						<span>Написать в Телеграм</span>
+					</a>
+					<a href="" class="contacts-footer__link contacts-footer__link_color-turquoise">
+						<img src="img/icons/whatsapp.svg" alt="">
+						<span>Написать в Ватсап</span>
+					</a>
+				</div>
 				<div class="footer__bottom copyright">
 					<div class="copyright__wrapper">
 						<div class="copyright__body">
 							<div class="copyright__item">
 								<span class="js-copyright-year">2023</span>
-								Название организации
+								© ООО «Династия»
 								<script>
-									window.onload = function() {
-										document.querySelector('.js-copyright-year').innerText = new Date().getFullYear()
-									};
+									window.onload = () => document.querySelector('.js-copyright-year').innerText = new Date().getFullYear();
 								</script>
 							</div>
 							<a href="" data-popup="#policy" class="copyright__item">Политика конфиденциальности</a>
@@ -465,66 +1119,27 @@
 			</div>
 		</footer>
 	</div>
-	<div id="popup" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content">
-				<div class="popup__header">
-					<div class="popup__title">Заголовок</div>
-					<button data-close type="button" class="popup__close">
-						<svg class="popup__close-svg">
-							<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
-						</svg>
-					</button>
-				</div>
-				<div class="popup__main">
-
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="popup-box">
-		<!-- Модалка шаринга -->
-		<div id="share-popup" aria-hidden="true" class="popup popup_center">
+		<div id="video" aria-hidden="true" class="popup video-popup">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<div class="popup__header">
-						<div class="popup__title">Поделиться</div>
 						<button data-close type="button" class="popup__close">
-							<svg class="">
+							<svg class="popup__close-svg">
 								<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
 							</svg>
 						</button>
 					</div>
-					<div class="popup__main">
-						<div class="share">
-							<div class="share__social">
-								<!-- uSocial -->
-								<script async src="https://usocial.pro/usocial/usocial.js?uid=21cd4b58eaf61697&v=6.1.5&_v=20240917012010" data-script="usocial" charset="utf-8"></script>
-								<div class="uSocial-Share" data-pid="b7450283dbc9e941ee22b283d6036804" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size48,eachCounter0,counter0,nomobile,mobile_position_right" data-social="vk,ok,telegram,wa,vi"></div>
-								<!-- /uSocial -->
-							</div>
-							<div class="share__copy-url">
-								<div class="form__line">
-									<label for="copyUrl" class="form__label">Ссылка на товар</label>
-									<input autocomplete="off" id="copyUrl" type="text" class="share__input form__input">
-									<svg class="form__clear-svg">
-										<use xlink:href="img/icons/icons.svg#input_clear"></use>
-									</svg>
-								</div>
-								<button type="button" class="share__button">Скопировать ссылку</button>
-							</div>
-						</div>
-					</div>
+					<div data-popup-youtube-place class="popup__video"></div>
 				</div>
 			</div>
 		</div>
-		<!-- Модалка шаринга -->
 		<!-- Спасибо -->
 		<div id="thanks" aria-hidden="true" class="popup">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<div class="popup__header">
-						<div class="popup__title">Спасибо</div>
+						<div class="popup__title">Спасибо <br> за обращение</div>
 						<button data-close type="button" class="popup__close">
 							<svg class="popup__close-svg">
 								<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
@@ -532,13 +1147,10 @@
 						</button>
 					</div>
 					<div class="popup__main">
-						<div class="popup__text">Мы свяжемся с вами в ближайшее время для уточнения информации</div>
-						<button data-close type="button" class="popup__close">
-							Ok
+						<div class="popup__text">Наш специалист свяжется с вами <br> в ближайшее время для уточнения деталей</div>
+						<button data-close type="button" class="form__button">
+							Хорошо
 						</button>
-						<div class="popup__icon">
-							<img src="img/icons/popup__icon.svg" alt="">
-						</div>
 					</div>
 				</div>
 			</div>
@@ -549,7 +1161,7 @@
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<div class="popup__header">
-						<div class="popup__title">Заказ звонка</div>
+						<div class="popup__title">Запись на прием</div>
 						<button data-close type="button" class="popup__close">
 							<svg class="">
 								<use xlink:href="img/icons/icons.svg#icon_close-modal"></use>
@@ -557,33 +1169,40 @@
 						</button>
 					</div>
 					<div class="popup__main">
-						<div class="popup__text">Оставьте контактные данные и мы вам перезвоним</div>
 						<div class="popup__form">
-							<form action="" data-parsley-validate data-parsley-trigger="change" required="" class="form">
+							<form action="" class="main-form__form" data-parsley-validate data-parsley-trigger="change">
 								<div class="form__line">
-									<label for="p-callback-2.1" class="form__label">Ваше имя</label>
-									<input id="p-callback-2.1" type="text" class="form__input">
+									<label for="" class="form__label">Ваше имя *</label>
+									<input required id="" type="text" name="" class="form__input">
 									<svg class="form__clear-svg">
 										<use xlink:href="img/icons/icons.svg#input_clear"></use>
 									</svg>
 								</div>
 								<div class="form__line">
-									<label for="p-callback-2.2" class="form__label">Телефон *</label>
-									<input required id="p-callback-2.2" type="tel" class="form__input js_phone">
+									<label for="" class="form__label">Телефон *</label>
+									<input required id="" type="tel" name="" class="form__input js_phone">
 									<svg class="form__clear-svg">
 										<use xlink:href="img/icons/icons.svg#input_clear"></use>
 									</svg>
 								</div>
 								<div class="form__line">
-									<label for="p-callback-2.3" class="form__label">Комментарий</label>
-									<textarea id="p-callback-2.3" autocomplete="off" name="" placeholder="" class="form__input"></textarea>
+									<label for="" class="form__label">E-mail</label>
+									<input id="" type="email" name="" class="form__input">
 									<svg class="form__clear-svg">
 										<use xlink:href="img/icons/icons.svg#input_clear"></use>
 									</svg>
 								</div>
-								<div class="form__footer">
-									<button type="submit" class="form__button btn btn_red">Отправить</button>
-									<div class="form__consent">Отправляя данные, я даю свое <a href="" class="form__consent-link">согласие на обработку перс. данных</a></div>
+								<div class="form__line">
+									<select name="procedure" data-show-selected>
+										<option value selected>Выберите процедуру</option>
+										<option value="1">Пункт №1</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+									</select>
+								</div>
+								<div class="form__row">
+									<button type="submit" class="form__button">Отправить</button>
+									<div class="form__consent">Отправляя данные, вы соглашаетесь с <a href="" class="form__consent-link">политикой конфиденциальности</a></div>
 								</div>
 							</form>
 						</div>
@@ -593,8 +1212,8 @@
 		</div>
 		<!-- Заказать звонок -->
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240917012010" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20240917012010"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240923213420" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20240923213420"></script>
 </body>
 
 </html>

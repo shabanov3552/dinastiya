@@ -1,3 +1,4 @@
+@@include('_main-form.htm',{})
 <footer class="footer">
 	<div class="footer__container">
 		<div class="footer__top">
@@ -49,8 +50,8 @@
 				<div class="copyright__body">
 					<div class="copyright__item">
 						<span class="js-copyright-year">2023</span>
-						Название организации
-						<script>window.onload = function () { document.querySelector('.js-copyright-year').innerText = new Date().getFullYear() };</script>
+						© ООО «Династия»
+						<script>window.onload = () => document.querySelector('.js-copyright-year').innerText = new Date().getFullYear();</script>
 					</div>
 					<a href="" data-popup="#policy" class="copyright__item">Политика конфиденциальности</a>
 					<a href="" data-popup="#consent" class="copyright__item">Согласие на обработку персональных данных</a>

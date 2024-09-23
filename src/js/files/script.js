@@ -162,12 +162,12 @@ document.addEventListener('DOMContentLoaded', () => {
    const menuBlocks = menuCatalog.querySelectorAll('.submenu-catalog__body[data-submenu]');
    let submenuTimer;
 
-   menuBlocks.forEach(block => block.hidden = true);
+   // menuBlocks.forEach(block => block.hidden = true);
 
    function closeAllSubmenu() {
       menuBlocks.forEach(block => {
          block.classList.remove('submenu-open');
-         block.hidden = true;
+         // block.hidden = true;
       })
       menuLinks.forEach(link => { link.classList.remove('active'); });
       document.documentElement.classList.remove('submenu-open');
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
       target.classList.add('active')
       menuBlocks.forEach(block => {
          if (block.dataset.submenu == target.dataset.parent) {
-            block.hidden = false;
+            // block.hidden = false;
             submenuTimer = setTimeout(() => {
                block.classList.add('submenu-open');
             }, 400)
@@ -221,3 +221,4 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 //#endregion
+

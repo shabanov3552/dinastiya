@@ -30,6 +30,7 @@ textarea {
 
 	&__line {
 		position: relative;
+		margin-bottom: rem(32);
 
 		&._form-focus {
 			.form__label {
@@ -48,7 +49,7 @@ textarea {
 		position: absolute;
 		top: 13px;
 		left: 16px;
-		color: rgba(0, 0, 0, 0.604535);
+		color: rgba(0, 0, 0, 0.6);
 		font-size: 18px;
 		line-height: 22px;
 		pointer-events: none;
@@ -63,8 +64,8 @@ textarea {
 	&__input {
 		outline: none;
 		background: #FFFFFF;
-		border: 1px solid rgba(0, 0, 0, 0.230742);
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		// border: 1px solid rgba(0, 0, 0, 0.230742);
+		// box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 		border-radius: 5px;
 		height: 48px;
 		padding: rem(16) rem(32) rem(16) rem(16);
@@ -134,6 +135,76 @@ textarea {
 			}
 		}
 	}
+
+	// .form__row
+
+	&__row {
+		display: grid;
+		grid-template-columns: 211px auto;
+		gap: 21px 60px;
+	}
+
+	// .form__button
+
+	&__button {
+		font-weight: 600;
+		font-size: 17px;
+		line-height: 159%;
+		color: #fff;
+		padding: rem(12.5) rem(18);
+		border-radius: 3px;
+		text-align: left;
+		align-self: start;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			transition: opacity 0.3s ease 0s;
+		}
+
+		&::before {
+			background: radial-gradient(97.74% 97.74% at 3.37% 99.79%, rgb(43, 216, 212) 0%, rgb(165, 232, 203) 100%);
+		}
+
+		&::after {
+			background: radial-gradient(97.74% 97.74% at 3.37% 99.79%, rgb(49 175 172) 0%, rgb(150 225 192) 100%);
+			opacity: 0;
+		}
+
+		&:hover {
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+
+	// .form__consent
+
+	&__consent {
+		font-size: 12px;
+		color: rgba(0, 0, 0, 0.3);
+		line-height: 150%;
+	}
+
+	// .form__consent-link
+
+	&__consent-link {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
 }
 
 .parsley-errors-list {

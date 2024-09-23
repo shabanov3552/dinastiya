@@ -242,6 +242,7 @@
 			position: absolute;
 			right: 27px;
 			top: 23px;
+			z-index: 101;
 		}
 	}
 
@@ -269,6 +270,7 @@
 			opacity: 0;
 			visibility: hidden;
 			padding-top: rem(90);
+			z-index: 100;
 
 			.menu-open & {
 				transition: top 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0.3s ease 0s;
@@ -434,6 +436,13 @@
 				line-height: 112%;
 				padding: rem(15) rem(8);
 				color: #000;
+				font-weight: 400;
+				text-align: center;
+
+				&::before,
+				&::after {
+					display: none;
+				}
 
 				@media (any-hover: hover) {
 					&:hover {
@@ -453,6 +462,12 @@
 }
 
 .submenu-catalog {
+	display: none;
+
+	.submenu-open & {
+		display: block;
+	}
+
 	@media (max-width:$xl) {
 		&::before {
 			content: '';
@@ -480,6 +495,7 @@
 		visibility: hidden;
 		transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s, transform 0.3s ease 0s;
 		border-top: 1px solid #dfdfdf;
+		z-index: 2;
 
 		@media (min-width:$xl) {
 			&.submenu-problem {}
@@ -690,7 +706,7 @@
 		position: relative;
 		width: rem(36);
 		height: rem(30);
-		z-index: 5;
+		z-index: 101;
 
 		@media (any-hover: none) {
 			cursor: default;

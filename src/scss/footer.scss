@@ -62,6 +62,10 @@
       font-size: 16px;
       line-height: 137%;
       color: #000;
+
+      &:hover {
+         text-decoration: underline;
+      }
    }
 
    // .footer__license
@@ -175,7 +179,9 @@
       font-size: 14px;
       line-height: 22px;
 
-      @media (min-width:$lg) {}
+      &[href]:hover {
+         text-decoration: underline;
+      }
 
       @media (max-width:$xxl) and (min-width:$lg) {
 

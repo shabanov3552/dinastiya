@@ -59,10 +59,12 @@ body::after {
 		visibility: hidden;
 		transform: translate(120%, 0px);
 		transition: all 0.6s ease 0s;
-		background: #fff;
+		background: #d7fdfc;
 		max-width: 667px;
 		width: 100%;
 		height: 100%;
+		display: grid;
+		align-content: center;
 
 		.popup_show & {
 			visibility: visible;
@@ -92,9 +94,12 @@ body::after {
 
 	&__close {
 		outline: none;
-		width: 22px;
-		height: 22px;
-		flex: 0 0 22px;
+		width: 28px;
+		height: 28px;
+		flex: 0 0 28px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
 
 		svg {
 			height: 100%;
@@ -121,7 +126,6 @@ body::after {
 	// .popup__header
 
 	&__header {
-		border-bottom: 1px solid #CACACA;
 		padding: rem(40);
 		padding-left: rem(54);
 		padding-right: rem(65);
@@ -162,8 +166,9 @@ body::after {
 	// .popup__title
 
 	&__title {
-		font-size: 36px;
-		font-weight: 800;
+		font-weight: 400;
+		font-size: 44px;
+		color: #3b3d3e;
 
 		@media (max-width:$md) {
 			font-size: 25px;
@@ -183,7 +188,7 @@ body::after {
 	&__main {
 		padding: rem(24) rem(60) rem(50);
 		overflow: auto;
-		height: calc(100% - 121px);
+		height: 100%;
 
 		#policy &,
 		#consent & {
@@ -265,6 +270,10 @@ body::after {
 	&__main {
 		#share-popup & {
 			height: auto;
+		}
+
+		.form__button {
+			width: 211px;
 		}
 	}
 

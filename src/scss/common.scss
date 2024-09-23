@@ -22,3 +22,22 @@
       justify-content: center;
    }
 }
+
+.video-btn {
+   background: #a2f4ee;
+   border-radius: 31px;
+   display: grid;
+   grid-template-columns: 22px 1fr;
+   align-items: center;
+   gap: 15px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 144%;
+   color: #5f5f5f;
+   padding: rem(13) rem(25);
+   transition: background 0.3s ease 0s;
+
+   &:hover {
+      background: #0ae8d5;
+   }
+}

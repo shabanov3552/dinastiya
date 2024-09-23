@@ -13,11 +13,11 @@ if (document.querySelector('#map')) {
 
 		function init() {
 			var myMap = new ymaps.Map("map", {
-				center: [56.066525, 92.961439],
-				zoom: 16,
+				center: [53.76507407075364, 87.11214850000006],
+				zoom: 17,
 				controls: ['zoomControl'],
 			});
-			let addresFirst = new ymaps.Placemark([56.066525, 92.961439], {}, {
+			let addresFirst = new ymaps.Placemark([53.76507407075364, 87.11214850000006], {}, {
 				iconLayout: 'default#imageWithContent',
 				iconImageHref: '@img/icons/map-marker.svg',
 				iconImageSize: [54, 78],

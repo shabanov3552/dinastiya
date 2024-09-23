@@ -1,0 +1,46 @@
+<div class="main-form">
+   <div class="main-form__container">
+      <div class="main-form__from-wrapper">
+         <div class="main-form__title">Запись на прием</div>
+         <form action="" class="main-form__form" data-parsley-validate data-parsley-trigger="change">
+            <div class="form__line">
+               <label for="" class="form__label">Ваше имя *</label>
+               <input required id="" type="text" name="" class="form__input">
+               <svg class="form__clear-svg">
+                  <use xlink:href="img/icons/icons.svg#input_clear"></use>
+               </svg>
+            </div>
+            <div class="form__line">
+               <label for="" class="form__label">Телефон *</label>
+               <input required id="" type="tel" name="" class="form__input js_phone">
+               <svg class="form__clear-svg">
+                  <use xlink:href="img/icons/icons.svg#input_clear"></use>
+               </svg>
+            </div>
+            <div class="form__line">
+               <label for="" class="form__label">E-mail</label>
+               <input id="" type="email" name="" class="form__input">
+               <svg class="form__clear-svg">
+                  <use xlink:href="img/icons/icons.svg#input_clear"></use>
+               </svg>
+            </div>
+            <div class="form__line">
+               <select name="procedure" data-show-selected>
+                  <option value selected>Выберите процедуру</option>
+                  <option value="1">Пункт №1</option>
+                  <option value="2">Пункт №2</option>
+                  <option value="3">Пункт №3</option>
+               </select>
+            </div>
+            <div class="form__row">
+               <button type="submit" class="form__button">Отправить</button>
+               <div class="form__consent">Отправляя данные, вы соглашаетесь с <a href="" class="form__consent-link">политикой конфиденциальности</a></div>
+            </div>
+         </form>
+      </div>
+      <div class="main-form__photo">
+         <div class="main-form__photo-ibg"><img src="@img/founder-photo.png" alt=""></div>
+         <div class="main-form__photo-caption">Анастасия Ситникова, <br> сооснователь и ведущий врач</div>
+      </div>
+   </div>
+</div>
