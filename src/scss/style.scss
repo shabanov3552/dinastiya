@@ -189,6 +189,9 @@ body {
 @import "header";
 @import "footer";
 @import "main-form";
+@import "page-header";
 
 // Подключение стилей отдельных страниц
 @import "home";
+@import "services";
+@import "price";

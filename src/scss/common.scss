@@ -41,3 +41,22 @@
       background: #0ae8d5;
    }
 }
+
+.gradient-bg .page {
+   position: relative;
+
+   &::before {
+      content: '';
+      height: 845px;
+      width: 780px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: radial-gradient(100% 100% at 0% 0%, rgb(218, 255, 253) 0%, rgb(255, 255, 255) 100%);
+      // transform: rotate(90deg);
+      z-index: -1;
+      pointer-events: none;
+      @include adaptiveValue("width", 780, 320, 0, 900, 320);
+      @include adaptiveValue("height", 845, 374, 0, 900, 320);
+   }
+}

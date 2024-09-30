@@ -1307,6 +1307,28 @@
 }
 
 .reviews {
+   .services-detail & {
+      background: linear-gradient(90deg, #60e3e0 0%, #c4ebda 100%);
+      margin-bottom: rem(133);
+      padding-top: rem(73);
+      padding-bottom: rem(110);
+
+      @media (max-width:$xxl) {
+         margin-bottom: rem(40);
+         padding-top: rem(64);
+         padding-bottom: rem(108);
+      }
+
+      @media (max-width:$xl) {
+         margin-bottom: rem(30);
+      }
+
+      @media (max-width:$md) {
+         margin: 0;
+         padding-bottom: rem(79);
+         padding-top: rem(32);
+      }
+   }
 
    // .reviews__container
 

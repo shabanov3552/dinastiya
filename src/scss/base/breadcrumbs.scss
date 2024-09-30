@@ -1,52 +1,9 @@
 .breadcrumbs {
 	position: relative;
 	z-index: 1;
-	margin-bottom: rem(18);
 	display: flex;
-
-	.page-contacts.page-left-margin & {
-		padding-left: rem(0);
-		max-width: 1083px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.page-faq.page-left-margin & {
-		@include adaptiveValue("padding-left", 242, 0, 0, 1920, 1440);
-	}
-
-	.page-about.page-left-margin &,
-	.page-faq-order.page-left-margin & {
-		padding-left: 0;
-		max-width: 1120px;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-
-		@media (max-width:$xxl) {
-			max-width: 960px;
-		}
-
-		@media (max-width:$xl) {
-			max-width: 726px;
-		}
-	}
-
-	.page-left-margin & {
-		padding-left: rem(320);
-
-		@media (max-width:$xxl) {
-			padding-left: rem(290);
-		}
-
-		@media (max-width:$xl) {
-			padding-left: 0;
-		}
-	}
-
-	@media (max-width:$md) {
-		margin-bottom: rem(10);
-	}
+	justify-content: center;
+	color: inherit;
 
 	// .breadcrumbs__list
 
@@ -65,7 +22,7 @@
 	// .breadcrumbs__li
 
 	&__li {
-		margin: rem(0) rem(15) rem(5) rem(0);
+		margin-right: rem(15);
 		display: flex;
 		align-items: center;
 		white-space: nowrap;
@@ -84,39 +41,24 @@
 	// .breadcrumbs__link
 
 	&__link {
-		color: #000;
-		font-size: 14px;
+		color: inherit;
+		font-size: 16px;
+		font-weight: 400;
 		line-height: 22px;
 		white-space: nowrap;
 
-		.page-about & {
-			color: #fff;
-		}
-
-		// .breadcrumbs__link_back-svg
-
-		&_back-svg {
-			display: none;
-			width: 18px;
-			height: 13px;
-			margin-right: rem(20);
-
-			use {
-				fill: #EB7A1D;
-			}
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 
 	// .breadcrumbs__item
 
 	&__item {
-		color: #000;
-		font-size: 14px;
+		color: inherit;
+		font-size: 16px;
+		font-weight: 400;
 		line-height: 22px;
 		white-space: nowrap;
-
-		.page-about & {
-			color: #fff;
-		}
 	}
 }
