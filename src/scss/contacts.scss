@@ -1,0 +1,141 @@
+.contacts {
+
+   // .contacts__container
+
+   &__container {
+      max-width: 1140px;
+   }
+
+   // .contacts__descr
+
+   &__descr {
+      line-height: 150%;
+      color: #3b3d3e;
+      margin-bottom: rem(92);
+      padding-left: rem(40);
+
+      @media (max-width:$md) {
+         margin-bottom: rem(26);
+      }
+
+      &>* {
+         &:not(:last-child) {
+            margin-bottom: rem(20);
+         }
+      }
+
+      a {
+         color: #00aeb0;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+
+   .contacts-map-card {
+      padding: 0;
+      box-shadow: none;
+      background: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: auto;
+      margin-bottom: rem(85);
+
+      @media (max-width:$md) {
+         grid-template-columns: 1fr;
+         margin-bottom: rem(55);
+      }
+
+      // .contacts-map-card__link
+
+      &__link {
+
+         // .contacts-map-card__link_color-turquoise
+
+         &_color-turquoise {}
+      }
+
+      // .contacts-map-card__phones
+
+      &__phones {}
+   }
+
+}
+
+.licens {
+   position: relative;
+
+   &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -40px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background: url(../img/icons/icon_doc.svg);
+   }
+}
+
+
+
+.requisites {
+   margin-bottom: rem(108);
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   gap: 40px;
+
+   @media (max-width:$md) {
+      display: block;
+      margin-bottom: rem(46);
+   }
+
+   // .requisites__title
+
+   &__title {
+      font-weight: 400;
+      font-size: 24px;
+      color: #3b3d3e;
+
+      @media (max-width:$md) {
+         margin-bottom: rem(20);
+      }
+   }
+
+   // .requisites__rows
+
+   &__rows {}
+
+   // .requisites__row
+
+   &__row {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      gap: 57px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 111%;
+      color: #3b3d3e;
+
+      @media (max-width:$md) {
+         display: block;
+      }
+
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+      }
+   }
+
+   // .requisites__name
+
+   &__name {
+      @media (max-width:$md) {
+         margin-bottom: rem(5);
+      }
+   }
+
+   // .requisites__value
+
+   &__value {}
+}

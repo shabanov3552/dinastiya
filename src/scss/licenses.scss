@@ -1,0 +1,124 @@
+.licenses {
+   max-width: 1166px;
+   margin: 0 auto;
+   margin-bottom: rem(194);
+
+   @media (max-width:$xxl) {
+      margin-bottom: rem(157);
+   }
+
+   @media (max-width:$xl) {
+      margin-bottom: rem(78);
+   }
+
+   @media (max-width:$md) {
+      margin-bottom: rem(39);
+   }
+
+   // .licenses__descr
+
+   &__descr {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 76px;
+      margin-bottom: rem(72);
+
+      @media (max-width:$xl) {
+         grid-template-columns: 1fr;
+         gap: 35px;
+         margin-bottom: rem(48);
+      }
+
+      @media (max-width:$lg) {
+         margin-bottom: rem(33);
+      }
+   }
+
+   // .licenses__text
+
+   &__text {
+      line-height: 150%;
+      color: #3b3d3e;
+
+      .licenses__assessment & {
+         max-width: 840px;
+         margin: 0 auto;
+         margin-bottom: rem(102);
+
+         @media (max-width:$xl) {
+            margin-bottom: rem(48);
+            max-width: 100%;
+         }
+
+         @media (max-width:$lg) {
+            margin-bottom: rem(33);
+         }
+      }
+
+      a {
+         color: #00aeb0;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+
+   // .licenses__gallery
+
+   &__gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 33px;
+      justify-items: center;
+      align-items: center;
+      max-width: 1020px;
+      margin: 0 auto;
+      margin-bottom: rem(102);
+
+      @media (max-width:$xl) {
+         margin-bottom: rem(48);
+      }
+
+      @media (max-width:$md) {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 15px;
+      }
+   }
+
+   // .licenses__image
+
+   &__image {
+      box-shadow: 0 12px 24px 0 rgba(77, 134, 135, 0.26);
+
+      img {
+         max-width: 100%;
+      }
+   }
+
+   // .licenses__image-ibg
+
+   &__image-ibg {
+      height: 521px;
+      display: block;
+
+      @media (max-width:$xl) {
+         height: 470px;
+      }
+
+      @media (max-width:$md) {
+         height: 250px;
+      }
+
+      @media (max-width:$sm) {
+         height: 171px;
+      }
+   }
+
+   // .licenses__assessment
+
+   &__assessment {
+      max-width: 1020px;
+      margin: 0 auto;
+   }
+}

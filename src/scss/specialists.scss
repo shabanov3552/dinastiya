@@ -1,0 +1,361 @@
+.specialists {
+   margin-bottom: rem(175);
+
+   @media (max-width:$xxl) {
+      margin-bottom: rem(100);
+   }
+
+   @media (max-width:$md) {
+      margin-bottom: rem(52);
+   }
+
+   // .specialists__container
+
+   &__container {
+      padding: rem(0) rem(106);
+      max-width: 1497px;
+
+      @media (max-width:$xl) {
+         padding: rem(0) rem(30);
+      }
+
+      @media (max-width:$md) {
+         padding: rem(0) rem(20);
+      }
+   }
+
+   // .specialists__card
+
+   &__card {
+      display: grid;
+      gap: 123px;
+      grid-template-columns: auto 1fr;
+
+      &:not(:last-child) {
+         margin-bottom: rem(48);
+      }
+
+      @media (max-width:$xxl) {
+         gap: 104px;
+      }
+
+      @media (max-width:$xl) {
+         gap: 63px;
+      }
+
+      @media (max-width:$lg) {
+         grid-template-columns: 1fr;
+         gap: 32px;
+      }
+   }
+
+   // .specialists__image-ibg
+
+   &__image-ibg {
+      height: 590px;
+      width: 393px;
+
+      @media (max-width:$xxl) {
+         width: 323px;
+         height: 485px;
+      }
+
+      @media (max-width:$xs) {
+         width: 100%;
+
+         img {
+            object-position: top;
+         }
+      }
+   }
+
+   // .specialists__content
+
+   &__content {}
+
+   // .specialists__name
+
+   &__name {
+      font-weight: 400;
+      font-size: 30px;
+      color: #000;
+      margin-bottom: rem(32);
+
+      @media (max-width:$lg) {
+         margin-bottom: rem(21);
+      }
+
+      @media (max-width:$md) {
+         font-size: 24px;
+      }
+   }
+
+   // .specialists__position
+
+   &__position {
+      line-height: 150%;
+      color: #3b3d3e;
+      margin-bottom: rem(32);
+
+      @media (max-width:$lg) {
+         margin-bottom: rem(21);
+      }
+   }
+
+   // .specialists__exp
+
+   &__exp {
+      line-height: 150%;
+      color: #3b3d3e;
+      margin-bottom: rem(32);
+
+      @media (max-width:$lg) {
+         margin-bottom: rem(21);
+      }
+   }
+
+   // .specialists__text
+
+   &__text {
+      line-height: 150%;
+      color: #3b3d3e;
+      margin-bottom: rem(32);
+      max-width: 680px;
+
+      @media (max-width:$lg) {
+         max-width: 100%;
+         margin-bottom: rem(21);
+      }
+
+      ul {
+         padding-left: rem(25);
+
+         li {
+            list-style-type: disc;
+         }
+      }
+   }
+
+   // .specialists__link
+
+   &__link {
+      width: 48px;
+      height: 48px;
+
+      img {
+         max-width: 100%;
+      }
+   }
+}
+
+//========================================================================================================================================================
+
+.specialist-detail {
+   padding-top: rem(28);
+   margin-bottom: rem(235);
+
+   @media (max-width:$xxl) {
+      margin-bottom: rem(136);
+   }
+
+   @media (max-width:$xl) {
+      margin-bottom: rem(115);
+   }
+
+   @media (max-width:$lg) {
+      margin-bottom: rem(90);
+   }
+
+   // .specialist-detail__container
+
+   &__container {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 108px;
+
+      @media (max-width:$xl) {
+         gap: 64px;
+      }
+
+      @media (max-width:$lg) {
+         grid-template-columns: 1fr;
+         gap: 40px;
+      }
+   }
+
+   // .specialist-detail__left
+
+   &__left {}
+
+   // .specialist-detail__sticky-block
+
+   &__sticky-block {
+      position: sticky;
+      top: 50px;
+
+      @media (max-width:$lg) {
+         position: static;
+      }
+   }
+
+   // .specialist-detail__image-ibg
+
+   &__image-ibg {
+      height: 782px;
+      width: 521px;
+      margin-bottom: rem(24);
+
+      @media (max-width:$xxl) {
+         width: 319px;
+         height: 479px;
+         margin-bottom: rem(16);
+      }
+
+      @media (max-width:$xs) {
+         width: 100%;
+
+         img {
+            object-position: top;
+         }
+      }
+   }
+
+   // .specialist-detail__right
+
+   &__right {}
+
+   // .specialist-detail__top
+
+   &__top {
+      padding: rem(5) 0;
+      padding-left: rem(19);
+      border-left: 8px solid #7feced;
+      margin-bottom: rem(59);
+
+      @media (max-width:$lg) {
+         margin-bottom: rem(39);
+      }
+   }
+
+   // .specialist-detail__post
+
+   &__post {
+      margin-bottom: rem(21);
+   }
+
+   // .specialist-detail__exp
+
+   &__exp {}
+
+   // .specialist-detail__button
+
+   &__button {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 112%;
+      text-align: center;
+      color: #000;
+      background-color: #fff;
+      border: 2px solid #01dbdd;
+      border-radius: 3px;
+      padding: rem(12.5) rem(15.5);
+      white-space: nowrap;
+      transition: all 0.3s ease 0s;
+      margin-bottom: rem(69);
+
+      @media (max-width:$lg) {
+         margin-bottom: rem(39);
+      }
+
+      &:hover {
+         background-color: #01dbdd;
+         color: #fff;
+      }
+   }
+
+   // .specialist-detail__descr
+
+   &__descr {
+      margin-bottom: rem(99);
+
+      @media (max-width:$md) {
+         margin-bottom: rem(50);
+      }
+   }
+
+   // .specialist-detail__title
+
+   &__title {
+      font-size: 30px;
+      margin-bottom: rem(27);
+
+      @media (max-width:$lg) {
+         font-size: 20px;
+         margin-bottom: rem(20);
+      }
+   }
+
+   // .specialist-detail__text
+
+   &__text {
+      line-height: 150%;
+      color: #3b3d3e;
+
+      &>* {
+         &:not(:last-child) {
+            margin-bottom: rem(32);
+         }
+      }
+
+      ul {
+         padding-left: rem(25);
+
+         li {
+            list-style-type: disc;
+
+            &:not(:last-child) {
+               margin-bottom: rem(20);
+            }
+         }
+      }
+   }
+
+   // .specialist-detail__diplomas
+
+   &__diplomas {}
+
+   // .specialist-detail__diplomas-title
+
+   &__diplomas-title {
+      font-size: 24px;
+      color: #3b3d3e;
+      margin-bottom: rem(35);
+   }
+
+   // .specialist-detail__diplomas-grid
+
+   &__diplomas-grid {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      align-items: start;
+      justify-content: start;
+      justify-items: start;
+      gap: 55px;
+
+      @media (max-width:$sm) {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   // .specialist-detail__diplomas-item
+
+   &__diplomas-item {
+      box-shadow: 0 12px 24px 0 rgba(77, 134, 135, 0.26);
+
+      img {
+         max-width: 100%;
+         // display: inline-block;
+         // height: auto;
+      }
+   }
+}

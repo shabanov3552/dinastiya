@@ -1,11 +1,115 @@
 @@include('html/_header.htm',{
 "title":"Контакты",
-"modClass":""
+"modClass":"gradient-bg"
 })
 <main class="page">
    @@include('html/_page-header.htm',{
    "src":"",
    "title":"Контакты"
    })
+   <div class="contacts">
+      <div class="contacts__container">
+         <div class="contacts-map-card">
+            <a href="" class="contacts-map-card__link">
+               <img src="@img/icons/icon_point-turquoise.svg" alt="">
+               <span>Новокузнецк, <br> ул. Пирогова, дом 10</span>
+            </a>
+            <div class="contacts-map-card__phones">
+               <img src="@img/icons/icon_phone-turquoise.svg" alt="">
+               <a href="tel:+7 (962) 734-16-79" class="contacts-map-card__link">
+                  <span>+7 (962) 734-16-79</span>
+               </a>
+               <a href="tel:+7 (3843) 209-679" class="contacts-map-card__link">
+                  <span>+7 (3843) 209-679</span>
+               </a>
+            </div>
+            <a href="mailto:clinicadinasty@yandex.ru" class="contacts-map-card__link">
+               <img src="@img/icons/icon_mail-turquoise.svg" alt="">
+               <span>clinicadinasty@yandex.ru</span>
+            </a>
+            <a href="" class="contacts-map-card__link contacts-map-card__link_color-turquoise">
+               <img src="@img/icons/telegram.svg" alt="">
+               <span>Написать в Телеграм</span>
+            </a>
+            <a href="" class="contacts-map-card__link contacts-map-card__link_color-turquoise">
+               <img src="@img/icons/whatsapp.svg" alt="">
+               <span>Написать в Ватсап</span>
+            </a>
+            <a href="" class="contacts-map-card__link">
+               <img src="@img/icons/icon_watch.svg" alt="">
+               <span>ПН–СБ с 9:00 до 20:00 <br> ВС с 9:00 до 18:00</span>
+            </a>
+         </div>
+         <div class="contacts__descr">
+            <p>Общество с ограниченной ответственностью «ДИНАСТИЯ».</p>
+            <p>Сокращенное — ООО «ДИНАСТИЯ».</p>
+            <p class="licens">Лицензия <a href="">№ ЛО-42-01-006423</a> Медицинская деятельность</p>
+         </div>
+         <div class="requisites">
+            <div class="requisites__title">Реквизиты</div>
+            <div class="requisites__rows">
+               <div class="requisites__row">
+                  <div class="requisites__name">ОГРН</div>
+                  <div class="requisites__value">1184205010813 по г. Новокузнецк</div>
+               </div>
+               <div class="requisites__row">
+                  <div class="requisites__name">ИНН</div>
+                  <div class="requisites__value">4217189398</div>
+               </div>
+               <div class="requisites__row">
+                  <div class="requisites__name">КПП </div>
+                  <div class="requisites__value">421701001</div>
+               </div>
+               <div class="requisites__row">
+                  <div class="requisites__name">Юр. адрес</div>
+                  <div class="requisites__value">654005, Кемеровская область, г. Новокузнецк, улица Пирогова, д. 10.</div>
+               </div>
+               <div class="requisites__row">
+                  <div class="requisites__name">Факт. адрес</div>
+                  <div class="requisites__value">654005, Кемеровская область, г. Новокузнецк, улица Пирогова, д. 10.</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="map">
+      <!-- <div class="map__contacts">
+         <div class="contacts-map-card">
+            <a href="" class="contacts-map-card__link">
+               <img src="@img/icons/icon_point-turquoise.svg" alt="">
+               <span>Новокузнецк, <br> ул. Пирогова, дом 10</span>
+            </a>
+            <div class="contacts-map-card__phones">
+               <img src="@img/icons/icon_phone-turquoise.svg" alt="">
+               <a href="tel:+7 (962) 734-16-79" class="contacts-map-card__link">
+                  <span>+7 (962) 734-16-79</span>
+               </a>
+               <a href="tel:+7 (3843) 209-679" class="contacts-map-card__link">
+                  <span>+7 (3843) 209-679</span>
+               </a>
+            </div>
+            <a href="mailto:clinicadinasty@yandex.ru" class="contacts-map-card__link">
+               <img src="@img/icons/icon_mail-turquoise.svg" alt="">
+               <span>clinicadinasty@yandex.ru</span>
+            </a>
+            <a href="" class="contacts-map-card__link contacts-map-card__link_color-turquoise">
+               <img src="@img/icons/telegram.svg" alt="">
+               <span>Написать в Телеграм</span>
+            </a>
+            <a href="" class="contacts-map-card__link contacts-map-card__link_color-turquoise">
+               <img src="@img/icons/whatsapp.svg" alt="">
+               <span>Написать в Ватсап</span>
+            </a>
+            <a href="" class="contacts-map-card__link">
+               <img src="@img/icons/icon_watch.svg" alt="">
+               <span>ПН–СБ с 9:00 до 20:00 <br> ВС с 9:00 до 18:00</span>
+            </a>
+         </div>
+      </div> -->
+      <div id="map"></div>
+      <script>
+         @@include('js/files/map.js', {})
+      </script>
+   </div>
 </main>
 @@include('html/_footer.htm',{})

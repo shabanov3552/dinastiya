@@ -1,11 +1,53 @@
 @@include('html/_header.htm',{
 "title":"Поиск",
-"modClass":""
+"modClass":"gradient-bg"
 })
 <main class="page">
    @@include('html/_page-header.htm',{
    "src":"",
    "title":"Поиск по «пластика» 32 результата"
    })
+   <div class="search">
+      <div class="search__container">
+         <div class="search__wrapper">
+            <div class="search__item">
+               <a href="" class="search__link">
+                  <span class="search__num">1.</span>
+                  Ситникова Анастасия Алексеевна
+               </a>
+               <div class="search__text">2018 г. «Реабилитация после пластических операций. Современные методы контурной пластики», Калининград …</div>
+            </div>
+            <div class="search__item">
+               <a href="" class="search__link">
+                  <span class="search__num">2.</span>
+                  Ситников Павел Геннадьевич
+               </a>
+               <div class="search__text">Абдоминопластика (классическая или миниабдоминопластика — коррекция диастаза прямых мышц живота)</div>
+            </div>
+            <div class="search__item">
+               <a href="" class="search__link">
+                  <span class="search__num">3.</span>
+                  Михайлик Кристина Сергеевна
+               </a>
+               <div class="search__text">Инъекционные методики (мезотерапия, биоревитализация, ботулинотерапия, контурная пластика)</div>
+            </div>
+            <div class="search__item">
+               <a href="" class="search__link">
+                  <span class="search__num">4.</span>
+                  ПЛАСТИЧЕСКАЯ ХИРУРГИЯ
+               </a>
+               <div class="search__text">С 2020 года в клинике косметологии Династия принимает пластический хирург. Ситников П.Г. работает в медицине более 20 лет. </div>
+            </div>
+            <div class="search__item">
+               <a href="" class="search__link">
+                  <span class="search__num">5.</span>
+                  КОНТУРНАЯ ПЛАСТИКА
+               </a>
+               <div class="search__text">Контурная пластика – инъекционная косметическая процедура, которая заключается во введении в глубокие слои кожи …</div>
+            </div>
+         </div>
+         @@include('html/_pagging.htm',{})
+      </div>
+   </div>
 </main>
 @@include('html/_footer.htm',{})

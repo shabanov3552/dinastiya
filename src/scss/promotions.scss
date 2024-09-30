@@ -1,0 +1,255 @@
+.promotions {
+   margin-bottom: rem(133);
+
+   @media (max-width:$lg) {
+      margin-bottom: rem(50);
+   }
+
+   // .promotions__container
+
+   &__container {
+      max-width: 1100px;
+   }
+
+   // .promotions__wrapper
+
+   &__wrapper {
+      margin-bottom: rem(50);
+
+      @media (min-width:$lg) {
+         grid-auto-rows: 1fr;
+      }
+   }
+
+   // .promotions__title
+
+   &__title {
+      font-weight: 600;
+      font-size: 24px;
+      color: #3b3d3e;
+      margin-bottom: rem(44);
+
+      @media (max-width:$md) {
+         margin-bottom: rem(16);
+      }
+   }
+
+   // .promotions__grid
+
+   &__grid {
+      display: grid;
+
+      @media (min-width:$lg) {
+         grid-auto-rows: 1fr;
+      }
+   }
+
+   // .promotions__item
+
+   &__item {
+      border: 1px solid #01DBDD;
+      border-radius: 5px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 40px;
+
+      @media (max-width:$lg) {
+         grid-template-columns: 1fr;
+         gap: 29px;
+      }
+
+      &:not(:last-child) {
+         margin-bottom: rem(25);
+      }
+   }
+
+   // .promotions__image-ibg
+
+   &__image-ibg {
+      height: 100%;
+      width: 426px;
+
+      @media (max-width:$lg) {
+         width: 100%;
+         height: rem(265);
+      }
+   }
+
+   // .promotions__content
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      padding: rem(22)rem(48)rem(33)rem(0);
+
+      @media (max-width:$lg) {
+         padding: rem(20);
+         padding-top: 0;
+      }
+   }
+
+   // .promotions__date
+
+   &__date {
+      margin-bottom: rem(8);
+      font-size: 14px;
+      line-height: 157%;
+      color: #000;
+   }
+
+   // .promotions__name
+
+   &__name {
+      font-size: 24px;
+      color: #3b3d3e;
+      margin-bottom: rem(39);
+      flex: 1 1 auto;
+
+      @media (max-width:$lg) {
+         font-size: 20px;
+         margin-bottom: rem(21);
+      }
+   }
+
+   // .promotions__descr
+
+   &__descr {
+      font-size: 16px;
+      line-height: 150%;
+      color: #000;
+
+      &>*:not(:last-child) {
+         margin-bottom: rem(13);
+      }
+
+      a {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+}
+
+//========================================================================================================================================================
+.promotions-detail {
+   margin-bottom: rem(116);
+
+   @media (max-width:$md) {
+      margin-bottom: rem(49);
+   }
+
+   // .promotions-detail__container
+
+   &__container {}
+
+   // .promotions-detail__image-ibg
+
+   &__image-ibg {
+      border-radius: 13px;
+      height: 525px;
+      overflow: hidden;
+      max-width: 840px;
+      margin: 0 auto;
+      margin-bottom: rem(80);
+
+      @media (max-width:$md) {
+         height: 209px;
+         margin-bottom: rem(26);
+      }
+   }
+
+   // .promotions-detail__descr
+
+   &__descr {
+      max-width: 840px;
+      margin: 0 auto;
+      margin-bottom: rem(110);
+
+      @media (max-width:$md) {
+         margin-bottom: rem(30);
+      }
+   }
+
+   // .promotions-detail__text
+
+   &__text {
+      line-height: 150%;
+      color: #3b3d3e;
+
+      a {
+         overflow-wrap: break-word;
+         font-size: 24px;
+         line-height: 142%;
+         color: #00aeb0;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+
+      &>*:not(:last-child) {
+         margin-bottom: rem(20);
+      }
+
+      &+.promotions-detail__text {
+         margin-top: rem(35);
+      }
+   }
+
+   // .promotions-detail__terms
+
+   &__terms {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 142%;
+      color: #3b3d3e;
+      margin: rem(49) 0;
+      position: relative;
+
+      &::before {
+         content: '';
+         position: absolute;
+         left: -52px;
+         top: 50%;
+         transform: translateY(-50%);
+         width: 8px;
+         height: 100%;
+         background: #7feced;
+      }
+
+      @media (max-width:$lg) {
+         &::before {
+            left: -20px;
+         }
+      }
+
+      @media (max-width:$md) {
+         margin: rem(30) 0;
+
+      }
+   }
+
+   // .promotions-detail__gallery
+
+   &__gallery {
+      max-width: 1068px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+
+      @media (max-width:$md) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+
+   // .promotions-detail__photo-ibg
+
+   &__photo-ibg {
+      height: 339px;
+
+      @media (max-width:$md) {
+         height: 160px;
+      }
+   }
+}

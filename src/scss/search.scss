@@ -1,0 +1,63 @@
+.search {
+   margin-bottom: rem(131);
+
+   @media (max-width:$md) {
+      margin-bottom: rem(50);
+   }
+
+   // .search__container
+
+   &__container {
+      max-width: 890px;
+   }
+
+   // .search__wrapper
+
+   &__wrapper {
+      margin-bottom: rem(89);
+
+      @media (max-width:$md) {
+         margin-bottom: rem(50);
+      }
+   }
+
+   // .search__item
+
+   &__item {
+      &:not(:last-child) {
+         margin-bottom: rem(29);
+      }
+   }
+
+   // .search__link
+
+   &__link {
+      font-weight: 400;
+      font-size: 20px;
+      color: #00aeb0;
+      margin-bottom: rem(13);
+      display: block;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+
+   // .search__num
+
+   &__num {}
+
+   // .search__text
+
+   &__text {
+      padding-left: rem(59);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 144%;
+      color: #000;
+
+      @media (max-width:$md) {
+         padding-left: rem(20);
+      }
+   }
+}
