@@ -21,6 +21,14 @@ document.addEventListener("click", function (e) {
    if (e.target.closest('textarea')) {
       txtarAutoHeight(e.target)
    }
+
+   // if (e.target.closest('.zones__link[data-zone]')) {
+   //    e.preventDefault();
+   //    let zone = e.target.closest('.zones__link[data-zone]').dataset.zone
+   //    console.log(zone);
+   //    console.log(document.querySelector(`[data-dropdown=${zone}]`));
+   //    dropdownAction(e, document.querySelector(`[data-dropdown=${zone}]`))
+   // }
 });
 
 //#endregion
@@ -130,17 +138,22 @@ document.addEventListener("click", function (e) {
 
    if (ddWrapper) {
       dropdownAction(e, ddWrapper, ddActive);
+   } else if (target.closest('.zones__link[data-zone]')) {
+      let zone = e.target.closest('.zones__link[data-zone]').dataset.zone
+      dropdownAction(e, document.querySelector(`[data-dropdown=${zone}]`), ddActive)
    } else if (ddActive) {
       ddActive.classList.remove('_dd-active');
    }
+
 });
 
 function dropdownAction(e, ddWrapper, ddActive) {
+   // debugger
    const target = e.target;
    const ddButton = ddWrapper.querySelector('[data-dropdown-button]');
    const input = ddWrapper.querySelector('input');
 
-   if (target == ddButton || target.closest('[data-dropdown-button]')) {
+   if (target == ddButton || target.closest('[data-dropdown-button]') || target.closest('[data-zone]')) {
       if (ddActive && ddActive !== ddWrapper) {
          ddActive.classList.remove('_dd-active');
       }
@@ -222,3 +235,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //#endregion
 
+document.addEventListener('DOMContentLoaded', () => {
+
+});

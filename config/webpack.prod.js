@@ -78,7 +78,7 @@ const config = {
 							replace: '../img',
 							flags: 'ig'
 						}
-					}, cssImagesWebpLoader,
+					},
 					{
 						loader: 'css-loader',
 						options: {

@@ -11754,13 +11754,16 @@ PERFORMANCE OF THIS SOFTWARE.
             const target = e.target;
             const ddWrapper = target.closest("[data-dropdown]");
             const ddActive = document.querySelector("._dd-active");
-            if (ddWrapper) dropdownAction(e, ddWrapper, ddActive); else if (ddActive) ddActive.classList.remove("_dd-active");
+            if (ddWrapper) dropdownAction(e, ddWrapper, ddActive); else if (target.closest(".zones__link[data-zone]")) {
+                let zone = e.target.closest(".zones__link[data-zone]").dataset.zone;
+                dropdownAction(e, document.querySelector(`[data-dropdown=${zone}]`), ddActive);
+            } else if (ddActive) ddActive.classList.remove("_dd-active");
         }));
         function dropdownAction(e, ddWrapper, ddActive) {
             const target = e.target;
             const ddButton = ddWrapper.querySelector("[data-dropdown-button]");
             const input = ddWrapper.querySelector("input");
-            if (target == ddButton || target.closest("[data-dropdown-button]")) {
+            if (target == ddButton || target.closest("[data-dropdown-button]") || target.closest("[data-zone]")) {
                 if (ddActive && ddActive !== ddWrapper) ddActive.classList.remove("_dd-active");
                 ddWrapper.classList.toggle("_dd-active");
                 if (input) setTimeout((() => {
@@ -11810,6 +11813,7 @@ PERFORMANCE OF THIS SOFTWARE.
                 if (e.target.closest(".js-back-to-menu")) closeAllSubmenu();
             }));
         }));
+        document.addEventListener("DOMContentLoaded", (() => {}));
         window["FLS"] = true;
         isWebp();
         menuInit();
