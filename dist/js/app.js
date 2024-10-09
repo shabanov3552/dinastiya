@@ -11773,6 +11773,7 @@ PERFORMANCE OF THIS SOFTWARE.
             }
         }
         document.addEventListener("DOMContentLoaded", (() => {
+            const mainPage = document.querySelector("main.page");
             const menuCatalog = document.querySelector(".menu-catalog");
             const menuLinks = menuCatalog.querySelectorAll(".menu-catalog__link[data-parent]");
             const menuBlocks = menuCatalog.querySelectorAll(".submenu-catalog__body[data-submenu]");
@@ -11780,6 +11781,7 @@ PERFORMANCE OF THIS SOFTWARE.
             function closeAllSubmenu() {
                 menuBlocks.forEach((block => {
                     block.classList.remove("submenu-open");
+                    block.style.top = null;
                 }));
                 menuLinks.forEach((link => {
                     link.classList.remove("active");
@@ -11787,11 +11789,13 @@ PERFORMANCE OF THIS SOFTWARE.
                 document.documentElement.classList.remove("submenu-open");
             }
             function openSubmenu(target) {
+                console.log(mainPage.offsetTop);
                 closeAllSubmenu();
                 target.classList.add("active");
                 menuBlocks.forEach((block => {
                     if (block.dataset.submenu == target.dataset.parent) submenuTimer = setTimeout((() => {
                         block.classList.add("submenu-open");
+                        if (window.matchMedia("(min-width:1199.98px)").matches) block.style.top = `${mainPage.offsetTop}px`;
                     }), 400);
                 }));
                 document.documentElement.classList.add("submenu-open");
@@ -11813,7 +11817,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 if (e.target.closest(".js-back-to-menu")) closeAllSubmenu();
             }));
         }));
-        document.addEventListener("DOMContentLoaded", (() => {}));
         window["FLS"] = true;
         isWebp();
         menuInit();

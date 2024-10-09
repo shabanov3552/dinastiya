@@ -60,3 +60,10 @@
       @include adaptiveValue("height", 845, 374, 0, 900, 320);
    }
 }
+
+.search-empty {
+   max-width: 1000px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: rem(500);
+}

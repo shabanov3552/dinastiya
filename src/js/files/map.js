@@ -19,7 +19,7 @@ if (document.querySelector('#map')) {
 			});
 			let addresFirst = new ymaps.Placemark([53.76507407075364, 87.11214850000006], {}, {
 				iconLayout: 'default#imageWithContent',
-				iconImageHref: '@img/icons/map-marker.svg',
+				iconImageHref: '@img/icons/map-marker.png',
 				iconImageSize: [54, 78],
 				iconImageOffset: [-30, -60],
 				iconContentOffset: [0, 0],

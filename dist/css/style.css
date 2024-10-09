@@ -1218,6 +1218,12 @@ body::after {
   z-index: -1;
   pointer-events: none
 }
+.search-empty {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 31.25rem
+}
 .header {
   -webkit-box-shadow: 0 2px 14px 0 rgba(0,139,141,.18);
   box-shadow: 0 2px 14px 0 rgba(0,139,141,.18);
@@ -1454,7 +1460,7 @@ body::after {
   transition: opacity .3s ease 0s,visibility .3s ease 0s,transform .3s ease 0s;
   transition: opacity .3s ease 0s,visibility .3s ease 0s,transform .3s ease 0s,-webkit-transform .3s ease 0s;
   border-top: 1px solid #dfdfdf;
-  z-index: 2
+  z-index: 5
 }
 .submenu-catalog__body.submenu-open {
   opacity: 1;
@@ -3393,7 +3399,8 @@ body::after {
   display: grid;
   -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
-  gap: 40px
+  gap: 40px;
+  position: relative
 }
 .promotions__item:not(:last-child) {
   margin-bottom: 1.5625rem
@@ -3425,6 +3432,11 @@ body::after {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto
+}
+.promotions__name::before {
+  content: "";
+  position: absolute;
+  inset: 0
 }
 .promotions__descr {
   font-size: 16px;
