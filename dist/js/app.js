@@ -10245,7 +10245,17 @@ PERFORMANCE OF THIS SOFTWARE.
         if (galleries.length) {
             let galleyItems = [];
             galleries.forEach((gallery => {
-                galleyItems.push({
+                if (gallery.dataset.gallery == "licenses") galleyItems.push({
+                    gallery,
+                    galleryClass: lightgallery_es5(gallery, {
+                        licenseKey: "7EC452A9-0CFD441C-BD984C7C-17C8456E",
+                        speed: 500,
+                        selector: ".licenses__image, .licenses__image-ibg",
+                        mobileSettings: {
+                            showCloseIcon: true
+                        }
+                    })
+                }); else galleyItems.push({
                     gallery,
                     galleryClass: lightgallery_es5(gallery, {
                         licenseKey: "7EC452A9-0CFD441C-BD984C7C-17C8456E",
@@ -11789,7 +11799,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 document.documentElement.classList.remove("submenu-open");
             }
             function openSubmenu(target) {
-                console.log(mainPage.offsetTop);
                 closeAllSubmenu();
                 target.classList.add("active");
                 menuBlocks.forEach((block => {

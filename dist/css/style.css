@@ -5274,10 +5274,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     grid-template-columns: 1fr;
     justify-items: center
   }
-  .examples__slider .swiper-button-next,
-  .examples__slider .swiper-button-prev {
-    display: none
-  }
   .price__nav-title {
     font-size: 18px;
     line-height: 144%;
@@ -5622,6 +5618,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .examples__title {
     font-size: 26px;
     margin-bottom: 1.25rem
+  }
+  .examples__slider .swiper-button-next,
+  .examples__slider .swiper-button-prev {
+    width: 45px
+  }
+  .examples__slider .swiper-button-prev {
+    padding-left: .625rem
+  }
+  .examples__slider .swiper-button-next {
+    padding-right: .625rem
   }
   .examples__slide {
     width: 375px

@@ -21,14 +21,6 @@ document.addEventListener("click", function (e) {
    if (e.target.closest('textarea')) {
       txtarAutoHeight(e.target)
    }
-
-   // if (e.target.closest('.zones__link[data-zone]')) {
-   //    e.preventDefault();
-   //    let zone = e.target.closest('.zones__link[data-zone]').dataset.zone
-   //    console.log(zone);
-   //    console.log(document.querySelector(`[data-dropdown=${zone}]`));
-   //    dropdownAction(e, document.querySelector(`[data-dropdown=${zone}]`))
-   // }
 });
 
 //#endregion
@@ -186,7 +178,6 @@ document.addEventListener('DOMContentLoaded', () => {
    }
 
    function openSubmenu(target) {
-      console.log(mainPage.offsetTop);
       closeAllSubmenu();
       target.classList.add('active')
       menuBlocks.forEach(block => {

@@ -41,17 +41,32 @@ const galleries = document.querySelectorAll('[data-gallery]');
 if (galleries.length) {
 	let galleyItems = [];
 	galleries.forEach(gallery => {
-		galleyItems.push({
-			gallery,
-			galleryClass: lightGallery(gallery, {
-				// plugins: [lgZoom, lgThumbnail],
-				licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
-				speed: 500,
-				mobileSettings: {
-					showCloseIcon: true,
-				},
+		if (gallery.dataset.gallery == 'licenses') {
+			galleyItems.push({
+				gallery,
+				galleryClass: lightGallery(gallery, {
+					// plugins: [lgZoom, lgThumbnail],
+					licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
+					speed: 500,
+					selector: '.licenses__image, .licenses__image-ibg',
+					mobileSettings: {
+						showCloseIcon: true,
+					},
+				})
 			})
-		})
+		} else {
+			galleyItems.push({
+				gallery,
+				galleryClass: lightGallery(gallery, {
+					// plugins: [lgZoom, lgThumbnail],
+					licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
+					speed: 500,
+					mobileSettings: {
+						showCloseIcon: true,
+					},
+				})
+			})
+		}
 	});
 	// Добавляем в объект модулей
 	flsModules.gallery = galleyItems;

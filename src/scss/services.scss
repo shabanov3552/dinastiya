@@ -1226,8 +1226,8 @@
             width: 69px;
          }
 
-         @media (max-width:$lg) {
-            display: none;
+         @media (max-width:$md) {
+            width: 45px;
          }
       }
 
@@ -1239,7 +1239,10 @@
 
          @media (max-width:$xl) {
             padding-left: rem(20);
+         }
 
+         @media (max-width:$md) {
+            padding-left: rem(10);
          }
       }
 
@@ -1251,6 +1254,10 @@
 
          @media (max-width:$xl) {
             padding-right: rem(20);
+         }
+
+         @media (max-width:$md) {
+            padding-right: rem(10);
          }
       }
    }
