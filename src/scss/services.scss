@@ -55,6 +55,18 @@
          font-size: 18px;
       }
 
+      h1 {
+         font-weight: 400;
+         font-size: 44px;
+         color: #3b3d3e;
+         margin-bottom: rem(53);
+
+         @media (max-width:$md) {
+            font-size: 26px;
+            margin-bottom: rem(18);
+         }
+      }
+
       p {
          &:not(:last-child) {
             margin-bottom: rem(20);
