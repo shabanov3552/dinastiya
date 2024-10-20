@@ -403,6 +403,7 @@
 			// .form__line
 
 			&__line {
+				margin-bottom: 0;
 
 				&._form-focus {
 					.form__label {
@@ -562,7 +563,7 @@
 			.submenu-body & {
 				grid-template-columns: repeat(2, auto);
 				max-width: 1045px;
-				gap: 0;
+				// gap: 0;
 			}
 
 			.submenu-face & {
@@ -595,12 +596,12 @@
 
 			&:nth-child(2) {
 				.submenu-plastic & {
-					justify-self: center;
+					// justify-self: center;
 				}
 			}
 
 			&:nth-child(3) {
-				justify-self: center;
+				// justify-self: center;
 			}
 
 			&:last-child {

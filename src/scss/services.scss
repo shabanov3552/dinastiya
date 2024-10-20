@@ -1281,12 +1281,21 @@
    // .examples__slide
 
    &__slide {
+      height: 497px;
+
+      @media (max-width:$xxl) {
+         height: 427px;
+      }
+
       @media (max-width:$md) {
          width: 375px;
+         @include adaptiveValue("height", 427, 188, 0, 767, 375);
       }
 
       img {
-         max-width: 100%;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
       }
    }
 }

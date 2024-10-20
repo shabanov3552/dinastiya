@@ -120,6 +120,14 @@
 		padding: 5px 15px;
 		color: rgba(0, 0, 0, 0.6);
 
+		&._section-title {
+			color: #fff;
+			text-align: center;
+			background-color: #00d7d9;
+			pointer-events: none;
+			user-select: none;
+		}
+
 		&._select-selected {
 			background-color: #eee;
 		}

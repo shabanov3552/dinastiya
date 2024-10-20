@@ -25,55 +25,6 @@ document.addEventListener("click", function (e) {
 
 //#endregion
 
-//#region Шаринг в деталке
-
-let shareButton = document.getElementById('share-button');
-if (shareButton) {
-   let thisUrl = window.location.href
-   let thisTitle = document.title;
-   shareButton.addEventListener('click', function () {
-      // Проверка поддержки navigator.share
-      if (navigator.share && isMobile.any()) {
-
-         // navigator.share принимает объект с URL, title или text
-         navigator.share({
-            title: thisTitle,
-            url: thisUrl
-         })
-            .then(function () {
-               // Shareing successfull
-            })
-            .catch(function () {
-               // Sharing failed
-            })
-
-      } else {
-         flsModules.popup.open('#share-popup');
-         copyUrl();
-      }
-   })
-}
-function copyUrl() {
-   const copyButton = document.querySelector('.share__button');
-   const copyInput = document.querySelector('.share__input');
-
-   copyInput.value = window.location.href;
-   setTimeout(() => {
-      copyInput.focus();
-   }, 100);
-
-   copyButton.addEventListener("click", function (e) {
-      copyInput.select();
-      document.execCommand('copy');
-      window.getSelection().removeAllRanges();
-      copyButton.innerHTML = 'Ссылка скопированна';
-      copyButton.classList.remove('btn__orange');
-      copyButton.setAttribute('disabled', 'true');
-   });
-}
-
-//#endregion
-
 //#region автовысота для textarea
 
 function txtarAutoHeight(target) {
@@ -101,24 +52,6 @@ function txtarAutoHeight(target) {
    }
 }
 
-//#endregion
-
-//#region Кнопка вверх и лого
-
-if (document.querySelector('.broadcast')) {
-
-   let buttonToTop = function (e) {
-      let btnTop = document.querySelector('.broadcast');
-      let scr_val = window.pageYOffset + document.documentElement.clientHeight;
-      let scrollHeight = Math.max(
-         document.body.scrollHeight, document.documentElement.scrollHeight,
-         document.body.offsetHeight, document.documentElement.offsetHeight,
-         document.body.clientHeight, document.documentElement.clientHeight
-      );
-      scr_val >= (scrollHeight - 50) ? btnTop.classList.add('_active') : btnTop.classList.remove('_active');
-   };
-   window.addEventListener('scroll', buttonToTop);
-}
 //#endregion
 
 //#region Функционал дропдаунов открыть\закрыть

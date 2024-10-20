@@ -3789,26 +3789,6 @@
                 document.documentElement.classList.add(className);
             }));
         }
-        let isMobile = {
-            Android: function() {
-                return navigator.userAgent.match(/Android/i);
-            },
-            BlackBerry: function() {
-                return navigator.userAgent.match(/BlackBerry/i);
-            },
-            iOS: function() {
-                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-            },
-            Opera: function() {
-                return navigator.userAgent.match(/Opera Mini/i);
-            },
-            Windows: function() {
-                return navigator.userAgent.match(/IEMobile/i);
-            },
-            any: function() {
-                return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
-            }
-        };
         function functions_getHash() {
             if (location.hash) return location.hash.replace("#", "");
         }
@@ -4929,13 +4909,16 @@
                 }
             }
             getOption(selectOption, originalSelect) {
+                const selectOptionDisabled = selectOption.hasAttribute("data-section");
+                const optionSectionClass = selectOptionDisabled ? "_section-title" : "";
+                const optionSectionAttributes = selectOptionDisabled ? 'disabled tabindex="-1"' : "";
                 const selectOptionSelected = selectOption.selected && originalSelect.multiple ? ` ${this.selectClasses.classSelectOptionSelected}` : "";
                 const selectOptionHide = selectOption.selected && !originalSelect.hasAttribute("data-show-selected") && !originalSelect.multiple ? `hidden` : ``;
                 const selectOptionClass = selectOption.dataset.class ? ` ${selectOption.dataset.class}` : "";
                 const selectOptionLink = selectOption.dataset.href ? selectOption.dataset.href : false;
                 const selectOptionLinkTarget = selectOption.hasAttribute("data-href-blank") ? `target="_blank"` : "";
                 let selectOptionHTML = ``;
-                selectOptionHTML += selectOptionLink ? `<a ${selectOptionLinkTarget} ${selectOptionHide} href="${selectOptionLink}" data-value="${selectOption.value}" class="${this.selectClasses.classSelectOption}${selectOptionClass}${selectOptionSelected}">` : `<button ${selectOptionHide} class="${this.selectClasses.classSelectOption}${selectOptionClass}${selectOptionSelected}" data-value="${selectOption.value}" type="button">`;
+                selectOptionHTML += selectOptionLink ? `\n\t\t\t<a ${selectOptionLinkTarget} \n\t\t\t\t${optionSectionAttributes}\n\t\t\t\t${selectOptionHide} \n\t\t\t\thref="${selectOptionLink}" \n\t\t\t\tdata-value="${selectOption.value}" \n\t\t\t\tclass="${this.selectClasses.classSelectOption}${selectOptionClass}${selectOptionSelected} ${optionSectionClass}">` : `<button \n\t\t\t\t${selectOptionHide} \n\t\t\t\t${optionSectionAttributes}\n\t\t\t\tclass="${this.selectClasses.classSelectOption}${selectOptionClass}${selectOptionSelected} ${optionSectionClass}" \n\t\t\t\tdata-value="${selectOption.value}" \n\t\t\t\ttype="button">`;
                 selectOptionHTML += this.getSelectElementContent(selectOption);
                 selectOptionHTML += selectOptionLink ? `</a>` : `</button>`;
                 return selectOptionHTML;
@@ -8455,6 +8438,7 @@
                 observeParents: true,
                 slidesPerView: 4,
                 spaceBetween: 17,
+                loop: true,
                 navigation: {
                     prevEl: ".popular-servises__headline .swiper-button-prev",
                     nextEl: ".popular-servises__headline .swiper-button-next"
@@ -11700,36 +11684,6 @@ PERFORMANCE OF THIS SOFTWARE.
             }
             if (e.target.closest("textarea")) txtarAutoHeight(e.target);
         }));
-        let shareButton = document.getElementById("share-button");
-        if (shareButton) {
-            let thisUrl = window.location.href;
-            let thisTitle = document.title;
-            shareButton.addEventListener("click", (function() {
-                if (navigator.share && isMobile.any()) navigator.share({
-                    title: thisTitle,
-                    url: thisUrl
-                }).then((function() {})).catch((function() {})); else {
-                    modules_flsModules.popup.open("#share-popup");
-                    copyUrl();
-                }
-            }));
-        }
-        function copyUrl() {
-            const copyButton = document.querySelector(".share__button");
-            const copyInput = document.querySelector(".share__input");
-            copyInput.value = window.location.href;
-            setTimeout((() => {
-                copyInput.focus();
-            }), 100);
-            copyButton.addEventListener("click", (function(e) {
-                copyInput.select();
-                document.execCommand("copy");
-                window.getSelection().removeAllRanges();
-                copyButton.innerHTML = "Ссылка скопированна";
-                copyButton.classList.remove("btn__orange");
-                copyButton.setAttribute("disabled", "true");
-            }));
-        }
         function txtarAutoHeight(target) {
             const el = target;
             if (el.closest("textarea")) {
@@ -11750,15 +11704,6 @@ PERFORMANCE OF THIS SOFTWARE.
                     }
                 }));
             }
-        }
-        if (document.querySelector(".broadcast")) {
-            let buttonToTop = function(e) {
-                let btnTop = document.querySelector(".broadcast");
-                let scr_val = window.pageYOffset + document.documentElement.clientHeight;
-                let scrollHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight);
-                scr_val >= scrollHeight - 50 ? btnTop.classList.add("_active") : btnTop.classList.remove("_active");
-            };
-            window.addEventListener("scroll", buttonToTop);
         }
         document.addEventListener("click", (function(e) {
             const target = e.target;

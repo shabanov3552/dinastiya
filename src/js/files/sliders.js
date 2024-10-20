@@ -116,6 +116,7 @@ function initSliders() {
 			observeParents: true,
 			slidesPerView: 4,
 			spaceBetween: 17,
+			loop: true,
 			//touchRatio: 0,
 			//simulateTouch: false,
 			//loop: true,

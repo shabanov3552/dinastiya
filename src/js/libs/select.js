@@ -391,6 +391,9 @@ class SelectConstructor {
 	}
 	// Конструктор конкретного элемента списка
 	getOption(selectOption, originalSelect) {
+		const selectOptionDisabled = selectOption.hasAttribute('data-section');
+		const optionSectionClass = selectOptionDisabled ? '_section-title' : '';
+		const optionSectionAttributes = selectOptionDisabled ? 'disabled tabindex="-1"' : '';
 		// Если элемент выбран и включен режим мультивыбора, добавляем класс
 		const selectOptionSelected = selectOption.selected && originalSelect.multiple ? ` ${this.selectClasses.classSelectOptionSelected}` : '';
 		// Если элемент выбрани и нет настройки data-show-selected, скрываем элемент
@@ -402,7 +405,19 @@ class SelectConstructor {
 		const selectOptionLinkTarget = selectOption.hasAttribute('data-href-blank') ? `target="_blank"` : '';
 		// Строим и возвращаем конструкцию элемента
 		let selectOptionHTML = ``;
-		selectOptionHTML += selectOptionLink ? `<a ${selectOptionLinkTarget} ${selectOptionHide} href="${selectOptionLink}" data-value="${selectOption.value}" class="${this.selectClasses.classSelectOption}${selectOptionClass}${selectOptionSelected}">` : `<button ${selectOptionHide} class="${this.selectClasses.classSelectOption}${selectOptionClass}${selectOptionSelected}" data-value="${selectOption.value}" type="button">`;
+		selectOptionHTML += selectOptionLink ? `
+			<a ${selectOptionLinkTarget} 
+				${optionSectionAttributes}
+				${selectOptionHide} 
+				href="${selectOptionLink}" 
+				data-value="${selectOption.value}" 
+				class="${this.selectClasses.classSelectOption}${selectOptionClass}${selectOptionSelected} ${optionSectionClass}">` :
+			`<button 
+				${selectOptionHide} 
+				${optionSectionAttributes}
+				class="${this.selectClasses.classSelectOption}${selectOptionClass}${selectOptionSelected} ${optionSectionClass}" 
+				data-value="${selectOption.value}" 
+				type="button">`;
 		selectOptionHTML += this.getSelectElementContent(selectOption);
 		selectOptionHTML += selectOptionLink ? `</a>` : `</button>`;
 		return selectOptionHTML;
