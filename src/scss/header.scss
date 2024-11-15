@@ -100,6 +100,12 @@
 		&:hover {
 			text-decoration: underline;
 		}
+
+		// .header__link_disabled
+
+		&_disabled {
+			pointer-events: none;
+		}
 	}
 
 	// .header__logo
@@ -605,10 +611,14 @@
 			}
 
 			&:last-child {
+				.submenu-problem & {
+					// display: grid;
+					// gap: 20px;
+				}
 
 				.submenu-face &,
 				.submenu-plastic & {
-					justify-self: end;
+					// justify-self: end;
 				}
 			}
 		}
@@ -636,9 +646,7 @@
 	// .submenu-catalog__section
 
 	&__section {
-		&:not(:last-child) {
-			margin-bottom: rem(49);
-		}
+		margin-bottom: rem(49);
 	}
 
 	// .submenu-catalog__section-link

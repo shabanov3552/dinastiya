@@ -2,22 +2,17 @@
    max-width: 880px;
    margin: 0 auto;
    padding: rem(0) rem(20);
+   margin-bottom: rem(98);
 
-   .services & {
-      margin-bottom: rem(98);
-
-      @media (max-width:$lg) {
-         margin-bottom: rem(50);
-      }
+   @media (max-width:$lg) {
+      margin-bottom: rem(50);
    }
 
    .services-detail & {
       margin-top: rem(80);
-      margin-bottom: rem(131);
 
       @media (max-width:$lg) {
          margin-top: rem(45);
-         margin-bottom: rem(45);
       }
    }
 
@@ -55,7 +50,9 @@
          font-size: 18px;
       }
 
-      h1 {
+      h1,
+      h2,
+      h3 {
          font-weight: 400;
          font-size: 44px;
          color: #3b3d3e;
@@ -83,6 +80,10 @@
                margin-bottom: rem(15);
             }
          }
+      }
+
+      ol {
+         padding-left: rem(25);
       }
    }
 
@@ -870,6 +871,10 @@
                margin-bottom: rem(15);
             }
          }
+      }
+
+      ol {
+         padding-left: rem(25);
       }
    }
 }

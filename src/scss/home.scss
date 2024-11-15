@@ -626,7 +626,7 @@
       }
 
       @media (max-width:$md) {
-         padding: rem(0) rem(20);
+         padding: rem(0);
       }
    }
 
@@ -640,6 +640,10 @@
 
       @media (max-width:$xl) {
          padding-right: 0;
+      }
+
+      @media (max-width:$md) {
+         padding: rem(0) rem(20);
       }
    }
 
@@ -740,10 +744,12 @@
 
       @media (max-width:$md) {
          margin-bottom: rem(14);
+         margin-left: rem(20);
+         margin-right: rem(20);
       }
 
       @media (max-width:em(679.98)) {
-         width: 100%;
+         width: calc(100% - 40px);
          display: grid;
          border-radius: 24px;
 
@@ -775,7 +781,21 @@
 
    // .zones__content
 
-   &__content {}
+   &__content {
+      .second-level-zone & {
+         @media (max-width:$xxl) {
+            padding-bottom: rem(823);
+         }
+
+         @media (max-width:$lg) {
+            padding-bottom: rem(617);
+         }
+
+         @media (max-width:em(679.98)) {
+            // padding-bottom: rem(393);
+         }
+      }
+   }
 
    // .zones__body
 
@@ -799,6 +819,10 @@
 
       @media (max-width:$lg) {
          grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width:$md) {
+         padding: rem(0) rem(20);
       }
 
       @media (max-width:em(679.98)) {
@@ -850,7 +874,7 @@
    z-index: 2;
 
    @media (max-width:$xxl) {
-      position: relative;
+      // position: relative;
       width: 100%;
    }
 
@@ -884,15 +908,26 @@
    // .submenu-zone_body
 
    &_body {
+      width: 799px;
+
       @media (min-width:$xxl) {
-         width: 799px;
          left: auto;
          right: 99px;
          @include adaptiveValue("right", 99, 0, 0, 1920, 1700);
       }
 
       @media (max-width:$xxl) {
-         transform: translateX(69px);
+         left: 50%;
+         transform: translateX(calc(-50% + 69px));
+      }
+
+      @media (max-width:$lg) {
+         width: 599px;
+      }
+
+      @media (max-width:em(679.98)) {
+         transform: translateX(-50%);
+         width: 380px;
       }
    }
 
@@ -929,105 +964,140 @@
 
       &_volos {
          left: 50%;
-         top: 87px;
+         top: 10.58%;
       }
 
       // .submenu-zone__chunk_nos
 
       &_nos {
          left: 49%;
-         top: 320px;
+         top: 38.89%;
       }
 
       // .submenu-zone__chunk_guby
 
       &_guby {
          left: 52%;
-         top: 474px;
+         top: 57.6%;
       }
 
       // .submenu-zone__chunk_koza
 
       &_koza {
          left: 60%;
-         top: 339px;
+         top: 47.76%;
       }
 
       // .submenu-zone__chunk_podborodok
 
       &_podborodok {
          left: 52.5%;
-         top: 521px;
+         top: 63.31%;
       }
 
       // .submenu-zone__chunk_sheya
 
       &_sheya {
          left: 52.5%;
-         top: 586px;
+         top: 71.21%;
       }
 
       // .submenu-zone__chunk_lob
 
       &_lob {
-         top: 218px;
          left: 47%;
+         top: 26.5%;
       }
 
       // .submenu-zone__chunk_niz-tret
 
       &_niz-tret {
          left: 58%;
-         top: 455px;
+         top: 55.29%;
       }
 
       // .submenu-zone__chunk_glaza
 
       &_glaza {
          left: 51%;
-         top: 259px;
+         top: 31.48%;
       }
 
       // .submenu-zone__chunk_grud
 
       &_grud {
          left: 35.2%;
-         top: 195px;
+         top: 23.7%;
       }
 
       // .submenu-zone__chunk_kisti
 
       &_kisti {
-         left: 55%;
-         top: 420px;
+         left: 38%;
+         top: 53%;
       }
 
       // .submenu-zone__chunk_spina
 
       &_spina {
-         left: 37%;
-         top: 327px;
+         left: 44%;
+         top: 39.734%;
       }
 
       // .submenu-zone__chunk_zivot
 
       &_zivot {
          left: 23%;
-         top: 479px;
+         top: 58.199%;
       }
 
       // .submenu-zone__chunk_bedra
 
       &_bedra {
          left: 50%;
-         top: 587px;
+         top: 71.33%;
       }
 
       // .submenu-zone__chunk_bikini
 
       &_bikini {
          left: 28%;
-         top: 703px;
+         top: 85.43%;
+      }
+
+      // .submenu-zone__chunk_uho
+
+      &_uho {
+         left: 64%;
+         top: 41.43%;
+      }
+
+      // .submenu-zone__chunk_glaz
+
+      &_glaz {
+         left: 43%;
+         top: 37.43%;
+      }
+
+      // .submenu-zone__chunk_skula
+
+      &_skula {
+         left: 60%;
+         top: 38.43%;
+      }
+
+      // .submenu-zone__chunk_plecho
+
+      &_plecho {
+         left: 68%;
+         top: 25.43%;
+      }
+
+      // .submenu-zone__chunk_podmishki
+
+      &_podmishki {
+         left: 55%;
+         top: 22.43%;
       }
    }
 
@@ -1061,6 +1131,37 @@
       top: 50%;
       transform: translateY(-50%);
       left: calc(100% + 19px);
+      z-index: 10;
+
+      .submenu-zone__chunk_plecho & {
+         transform: translateX(50%);
+         top: calc(100% + 15px);
+         left: -200px;
+      }
+
+      @media (max-width:$md) {
+         transform: translate(0, 0);
+         top: calc(100% + 5px);
+         left: -266px;
+         transform: translateX(50%);
+
+         .submenu-zone__chunk_zivot &,
+         .submenu-zone__chunk_bikini & {
+            left: -200px;
+         }
+
+         .submenu-zone__chunk_grud & {
+            left: -220px;
+         }
+
+         .submenu-zone__chunk_spina & {
+            left: -220px;
+         }
+
+         .submenu-zone__chunk_plecho & {
+            left: -300px;
+         }
+      }
    }
 
    // .submenu-zone__links
@@ -1529,6 +1630,12 @@
 
       &_color-turquoise {
          color: #00aeb0;
+      }
+
+      // .contacts-map-card__link_disabled
+
+      &_disabled {
+         pointer-events: none;
       }
    }
 
